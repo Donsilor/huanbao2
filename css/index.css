@@ -1,0 +1,311 @@
+.bk{width:100%;height:100%;background:url(../images/bk.jpg)no-repeat;position:fixed;}
+
+.search .searchInp{margin-bottom: 10px;}
+
+/*运行情况*/
+.run{width:23%;height:290px;background:rgba(5,41,122,.7) url(../images/kuang.png)no-repeat center /100% 100%;position:absolute;left:1.5%;bottom:32px;}
+
+
+/*报警情况*/
+.police{width:49%;height:290px;background:rgba(5,41,122,.7) url(../images/kuang_1.png)no-repeat center /100% 100%;position:absolute;left:25.5%;bottom:32px;}
+
+.police .reports .b1{width:53%;height:auto;float:left;}
+
+
+.police .reports .b2{width:47%;height:auto;float:right;}
+.police .reports .b2 .b_top > div{float:left;font-size:16px;color:#59b2fb;margin-right:18px;}
+.police .reports .b2 .b_top > div:last-child{margin-right:0;}
+.police .reports .b2 .b_top > div span{margin-left:5px;font-size:30px;}
+.police .reports .b2 .b_top > div:first-child span{color:#f4485c;}
+.police .reports .b2 .b_top > div:nth-child(2) span{color:#36ffef;}
+.police .reports .b2 .b_top > div:nth-child(3) span{color:#f48545;}
+
+.police .reports .b2 .b_bottom{width:95%;height:185px;background:rgba(10,81,211,.3);margin-top:20px;padding-top:25px;}
+.police .reports .b2 .b_bottom ul li{padding-left:50px;margin-bottom:15px;}
+.police .reports .b2 .b_bottom ul li span{font-size:13px;color:#59b2fb;margin-right:25px;}
+.police .reports .b2 .b_bottom ul li span:nth-child(3){margin-right:5px;}
+.police .reports .b2 .b_bottom ul li span:last-child{margin-right:0;}
+
+
+/*实时情况*/
+.real{width:23%;height:540px;background:rgba(5,41,122,.7) url(../images/kuang_2.png)no-repeat center /100% 100%;position:absolute;right:1.5%;bottom:32px;}
+.real .b1{width:88%;height:50px;background:rgba(10,81,211,.3);margin:auto;line-height:50px;text-align:center;margin-top:20px;}
+.real .b1 > div{font-size:16px;color:#59b2fb;float:left;margin-left:4%;}
+.real .b1 > div:first-child span,.real .b1 > div:nth-child(2) span{font-size:30px;color:#9286f6;margin-left:5px;}
+.real .b1 > div:last-child{font-size:30px;color:#30f8dc;font-family:SH;}
+
+.real .b2{margin-top:15px;}
+.real .b2 > div{float:left;}
+.real .b2 .b_left{width:45%;height:10px;}
+
+.real .b2 .b_right{width:55%;padding-left:2%;}
+.real .b2 .b_right ul li{margin-bottom:15px;font-size:13px;color:#59b2fb;border-left:2px solid #fa9d6a;padding-left:10px;}
+.real .b2 .b_right ul li > span{display:inline-block;}
+.real .b2 .b_right ul li > span:first-child{width:30%;}
+.real .b2 .b_right ul li > span:nth-child(2){width:30%;}
+
+.real .b3{margin-top: 10px;padding: 0 4%;}
+.real .b3 .title{text-align: center;font-size: 16px;color: #fff;}
+.real .b3 .center{float: left;width: 28%;text-align: center;font-size: 13px;color: #59b2fb;line-height: 30px;margin-top: 10px;}
+
+/*总体情况*/
+.total{width:23%;height:260px;background:rgba(5,41,122,.7) url(../images/kuang.png)no-repeat center /100% 100%;position:absolute;right:1.5%;top:100px;}
+
+
+.c_title{font-size:18px;color:#fff;margin:20px 0 0 28px;}
+.total .b1{margin-top:15px;}
+.total .b1 .b_left{float:left;width:40%;height:210px;margin-top: -10px;}
+.total .b1 .b_right{float:left;width:60%;margin-top: -10px;}
+.total .b1 .b_right .count{width:90%;height:61px;background:rgba(10,81,211,.3);margin-bottom:11px;}
+.total .b1 .b_right .count > div{float:left;}
+.total .b1 .b_right .count > div:first-child{width:60%;text-align:center;padding-top:5px;}
+.total .b1 .b_right .count > div:first-child span{font-size:30px;color:#a1e649;margin-bottom:5px;}
+.total .b1 .b_right .count > div:first-child p{font-size:16px;color:#59b2fb;line-height:22px;}
+.total .b1 .b_right .count > div:last-child{font-size:30px;color:#30f8dc;font-family:SH;line-height:61px;}
+
+
+
+
+#efficientWorkRate{float: left;width: 40%;height: 250px;}
+
+#runningCondition{float: right;width: 50%;height: 220px;margin-top: 20px;margin-right: 20px;}
+
+#displayAlarm{float: left;width: 49%;height: 210px;margin-top: 30px;margin-left: 2.5%;}
+
+#pollutantType{float: left;width: 36%;height: 140px;}
+
+
+#qualifiedCase_left{float: left;width: 36%;height: 260px;}
+#qualifiedCase_right{float: right;width: 36%;height: 260px;}
+
+
+
+@media only screen and (min-height: 1080px) {
+
+  .real{height: 552px;}
+
+  .total{top: 20%;}
+
+  .search{top: 20%;position: absolute;margin-top: 0;}
+
+  .searchResult .resultList{height: 350px;}
+
+
+}
+
+
+@media only screen and (max-width: 1600px) {
+
+
+  .search{margin: 40px 0 0 1%;}
+
+  .searchResult .filtrate{margin: 10px;}
+  .searchResult .filtrate select{margin: 5px 0;font: 14px/16px '';height: 16px;}
+
+  .searchResult .keyword{margin: 10px;}
+  .searchResult .keyword a{font: 14px/16px '';margin: 0 2px 4px;}
+
+  .searchResult .resultList{height: 310px;}
+  .searchResult .resultList li{padding: 0 12px 8px;}
+  .searchResult .resultList li div.fl{width: 80%;}
+  .searchResult .resultList li .companyName{font: 14px/26px '';}
+  .searchResult .resultList li .addr{font: 14px/1 '';}
+  .searchResult .resultList li span.fl{font: 12px/14px '';padding: 0 3px;}
+
+
+  .searchResult .scrollBox > div{padding: 6px;}
+  .searchResult .detailDiv .BasicInfo div.fl{width: 82%;padding-right: .3rem;}
+  .searchResult .detailDiv .BasicInfo .companyName{font: 12px/26px '';}
+  .searchResult .detailDiv .BasicInfo .businessTime{margin-bottom: .6rem;}
+  .searchResult .detailDiv .BasicInfo span.fl{font: 12px/14px '';padding: 0 3px;float: right;}
+
+  .searchResult .detailDiv .BasicInfo .addr,
+  .searchResult .detailDiv .BasicInfo .phone{padding-right: 6px;font: 12px/1.5 '';}
+
+  .searchResult .scrollBox > div .info{font: 12px/1.5 '';}
+
+  .searchResult .scrollBox > div .info .shwit{width: 100%;}
+  .searchResult .scrollBox > div .info .shwit p{float: left;width: 50%;}
+
+
+  .c_title{font: 16px/1.5 '';margin: 10px 0 0 20px;}
+
+
+  .run{left: 1%;bottom: 1%;height: 250px;}
+
+
+  .police{height: 250px;bottom: 1%;width: 50.5%;left: 24.75%;}
+  .police .reports .b2 .b_top > div{font-size: 14px;}
+  .police .reports .b2 .b_top > div span{font-size: 20px;}
+  .police .reports .b2 .b_bottom{margin-top: 20px;height: auto;padding: 12px 0;}
+  .police .reports .b2 .b_bottom ul li{padding: 0 1.5rem;margin-bottom: 5px;}
+  .police .reports .b2 .b_bottom ul li span{font: 14px/1.5 '';margin-right: 5px;}
+
+
+  .real{right: 1%;bottom: 1%;height: 470px;}
+  .real .b1{margin-top: 10px;height: auto;line-height: 30px;}
+  .real .b1 > div{font-size: 14px;}
+  .real .b1 > div:first-child span,
+  .real .b1 > div:nth-child(2) span{font-size: 20px;}
+  .real .b1 > div:last-child{font-size: 22px;}
+  .real .b2 .b_right{width: 60%;}
+  .real .b2 .b_right ul li{font-size: 14px;}
+  .real .b3 .title{font-size: 16px;}
+  .real .b3 .center{font: 14px/22px '';}
+
+  .total{right: 1%;top: 100px;height: 220px;}
+  .total .b1 .b_left{height: 170px;margin-top: 0;}
+  .total .b1 .b_right{margin-top: -10px;}
+  .total .b1 .b_right .count{height: auto;margin-bottom: 10px;}
+  .total .b1 .b_right .count > div:first-child{padding-top: 10px;}
+  .total .b1 .b_right .count > div:first-child span{font-size: 16px;}
+  .total .b1 .b_right .count > div:first-child p{font-size: 14px;}
+  .total .b1 .b_right .count > div:last-child{font: 22px/50px '';}
+
+
+  #efficientWorkRate{height: 200px;margin-top: 0;}
+  #runningCondition{height: 200px;}
+  #displayAlarm{height: 180px;margin-top: 20px;}
+  #pollutantType{height: 140px;}
+  #qualifiedCase_left,
+  #qualifiedCase_right{height: 195px;}
+
+
+
+}
+
+
+@media only screen and (max-width: 1600px) and (min-height: 900px) {
+
+
+  .searchResult .resultList{height: 370px;}
+
+  .run{height: 280px;}
+
+  #efficientWorkRate,
+  #runningCondition{height: 230px;}
+
+
+  .police{height: 280px;}
+  .police .reports .b2 .b_bottom ul li span{line-height: 1.8;}
+
+  #displayAlarm{height: 210px;}
+
+  .real{height: 530px;}
+  .real .b2{margin-top: 1.5rem;}
+  .real .b3{margin-top: 1.5rem;}
+  .real .b3 .center{line-height: 28px;}
+
+  .total{height: 250px;}
+  .total .b1 .b_left{height: 200px;}
+  .total .b1 .b_right .count > div:first-child{padding-top: 1rem;}
+  .total .b1 .b_right .count > div:last-child{line-height: 60px;}
+
+
+  #qualifiedCase_left,
+  #qualifiedCase_right{height: 245px;}
+
+
+}
+
+
+@media only screen and (max-width: 1366px) {
+
+
+  /*.search{margin-top: 40px;}*/
+  .search .searchInp{height: 24px;margin-bottom: 5px;}
+  .search .searchInp input[type=text],
+  .search .searchInp input[type=button]{height: 22px;}
+
+
+  .searchResult .filtrate{margin: 6px;}
+  .searchResult .filtrate select{margin: 3px 0;font: 12px/14px '';height: 14px;}
+
+  .searchResult .keyword{margin: 6px;}
+  .searchResult .keyword a{font: 12px/14px '';}
+
+  .searchResult .resultList{height: 240px;}
+  .searchResult .resultList li .companyName{font: 12px/26px '';}
+
+  .searchResult .scrollBox > div{padding: 6px;}
+  .searchResult .detailDiv .BasicInfo div.fl{width: 82%;padding-right: .3rem;}
+  .searchResult .detailDiv .BasicInfo .companyName{font: 12px/26px '';}
+  .searchResult .detailDiv .BasicInfo .businessTime{margin-bottom: .6rem;}
+  .searchResult .detailDiv .BasicInfo span.fl{font: 12px/14px '';padding: 0 3px;float: right;}
+
+  .searchResult .detailDiv .BasicInfo .addr,
+  .searchResult .detailDiv .BasicInfo .phone{padding-right: 6px;font: 12px/1.5 '';}
+
+  .searchResult .scrollBox > div .info{font: 12px/1.5 '';}
+
+  .searchResult .scrollBox > div .info .shwit{width: 100%;}
+  .searchResult .scrollBox > div .info .shwit p{float: left;width: 50%;}
+
+
+  .c_title{font: 14px/1.5 '';}
+
+
+  .run{height: 200px;}
+
+
+  .police{height: 200px;}
+  .police .reports .b2 .b_top > div{font-size: 12px;}
+  .police .reports .b2 .b_top > div span{font-size: 18px;}
+  .police .reports .b2 .b_bottom{margin-top: 10px;padding: 10px 0;}
+  .police .reports .b2 .b_bottom ul li{padding: 0 1rem;margin-bottom: 3px;}
+  .police .reports .b2 .b_bottom ul li span{font-size: 12px;}
+
+
+  .real{right: 1%;bottom: 1%;height: 400px;}
+  .real .b1{margin-top: 10px;height: auto;line-height: 30px;}
+  .real .b1 > div{font-size: 12px;}
+  .real .b1 > div:first-child span,
+  .real .b1 > div:nth-child(2) span{font-size: 18px;}
+  .real .b1 > div:last-child{font-size: 20px;}
+  .real .b2 .b_right ul li{font-size: 12px;}
+  .real .b3 .title{font-size: 14px;}
+  .real .b3 .center{font: 12px/18px '';}
+
+  .total{right: 1%;top: 100px;height: 160px;}
+  .total .b1 .b_left{height: 130px;}
+  .total .b1 .b_right{margin-top: -20px;}
+  .total .b1 .b_right .count{height: auto;margin-bottom: 3px;}
+  .total .b1 .b_right .count > div:first-child{padding-top: 0;}
+  .total .b1 .b_right .count > div:first-child span{font-size: 14px;}
+  .total .b1 .b_right .count > div:first-child p{font-size: 12px;}
+  .total .b1 .b_right .count > div:last-child{font: 20px/40px '';}
+
+
+  #efficientWorkRate{height: 180px;margin-top: -10px;}
+  #runningCondition{height: 160px;}
+  #displayAlarm{height: 150px;margin-top: 10px;}
+  #pollutantType{height: 120px;}
+  #qualifiedCase_left,
+  #qualifiedCase_right{height: 160px;}
+
+
+
+
+}
+
+
+@media only screen and (max-width: 1366px) and (min-height: 768px) {
+
+  .search{margin-top: 60px;}
+  .searchResult .resultList{height: 310px;}
+
+  .total{top: 110px;}
+
+  .real{height: 470px;}
+  .real .b3 .center{line-height: 25px;}
+  #qualifiedCase_left,
+  #qualifiedCase_right{height: 220px;}
+
+}
+
+
+
+
+
+
+

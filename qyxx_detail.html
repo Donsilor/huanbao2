@@ -1,0 +1,2544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>实时数据详情</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/sssj.css">
+  <script src="js/js.js"></script>
+</head>
+<body>
+<div class="bk">
+  <!--header-->
+  <div class="clf header">
+    <div class="head_1"><a href="index.html">餐饮业环保综合管理系统</a></div>
+    <div class="head_2"><img src="images/header_1.png" alt=""></div>
+    <div class="clf head_3">
+      <div class=" fl btn">
+        <a href="#" class="btn1 current">企业信息</a>
+        <a href="#" class="btn2">日志管理</a>
+        <a href="tsfx-zlpj.html" class="btn3">统计分析</a>
+        <a href="#" class="btn4">监督管理</a>
+        <a href="#" class="btn5">运维管理</a>
+        <a href="#" class="btn6">系统管理</a>
+      </div>
+      <div class="clf fr right">
+
+        <div class="user"><a href="#"><img src="images/user.png" alt=""></a></div>
+
+        <div class="notice">
+          <a href="#"><img src="images/notice.png" alt=""></a>
+          <span>2</span>
+        </div>
+        <div class="email">
+          <a href="#"><img src="images/email.png" alt=""></a>
+          <span>3</span>
+        </div>
+
+        <div class="area"><a href="#">深圳市<i></i></a></div>
+
+        <div class="time">15:33:06</div>
+        <div class="year">2018年1月25日</div>
+      </div>
+    </div>
+    <div class="head_4"><img src="images/header_2.png" alt=""></div>
+  </div>
+
+  <!--左边按钮-->
+  <div class="left_btn"><a href="javascript:">企业详情</a></div>
+
+  <!--盒子-->
+  <div class="box">
+
+    <!--main-->
+    <div class="clf main">
+      <!--菜单-->
+      <div class="clf menu">
+        <div class="date clf">
+          <a href="javascript:" class="current">实时</a>
+          <a href="javascript:">今日</a>
+          <a href="javascript:">近7天</a>
+          <a href="javascript:">近30天</a>
+        </div>
+        <div class="time">
+          <a href="#"><span>2017/11/24 14:30:06</span>至 <span>2017/11/24 14:30:06</span> </a>
+        </div>
+        <div class="cutover">
+          <a href="javascript:" id="cutover" style="background:url(images/icon_6.png) no-repeat center/contain;"></a>
+        </div>
+        <div class="tabsOption">
+          <a href="javascript:" class="active">监测数据</a>
+          <a href="javascript:">报警记录</a>
+          <a href="javascript:">监管记录</a>
+          <a href="javascript:">企业态势</a>
+          <a href="javascript:">设备信息</a>
+        </div>
+      </div>
+
+      <div class="mainTab">
+        <div class="mainDiv mainDiv1">
+          <div class="dv1">
+            <div class="map"><img src="images/map.png" alt=""></div>
+            <div class="img"><img src="images/photo_1.jpg" alt=""></div>
+          </div>
+          <div class="dv2">
+            <div id="switchConts" class="switchConts">
+              <div class="switchItem">
+                <div class="info_1">
+                  <table>
+                    <tr>
+                      <td>监测点名称</td>
+                      <td>监测状态</td>
+                      <td>风机状态</td>
+                      <td>净化器状态</td>
+                      <td>净化率</td>
+                      <td>清洁度</td>
+                      <td>运转率</td>
+                      <td>回收油量</td>
+                      <td>最近报警</td>
+                    </tr>
+                    <tr>
+                      <td>赛百诺油烟监测点001</td>
+                      <td class="normal">正常</td>
+                      <td class="operation">运行</td>
+                      <td class="stop">停止</td>
+                      <td>69%</td>
+                      <td>|||</td>
+                      <td>49%</td>
+                      <td>302L</td>
+                      <td>VOC+60%</td>
+                      <td></td>
+                    </tr>
+                  </table>
+                  <div class="drop_down">
+                    <a href="javascript:" id="btn1"
+                       style="background:url(images/drop_down.png)no-repeat center top/contain"></a>
+                  </div>
+                </div>
+                <div class="details_list" id="table1" style="display:none;">
+                  <table>
+                    <tr>
+                      <th>时间</th>
+                      <th>状态</th>
+                      <th>风机状态</th>
+                      <th>净化器状态</th>
+                      <th>净化率 <span>%</span></th>
+                      <th>清洁度</th>
+                      <th>油烟浓度 <span>(mg/m3)</span></th>
+                      <th>VOC浓度 <span>(mg/m3)</span></th>
+                      <th>颗粒物浓度 <span>(mg/m3)</span></th>
+                    </tr>
+                    <tr>
+                      <td>16:23:07</td>
+                      <td><span class="normal">正常</span></td>
+                      <td>运行</td>
+                      <td>停止</td>
+                      <td>78</td>
+                      <td>Ⅲ</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>68</td>
+                    </tr>
+                    <tr>
+                      <td>16:23:07</td>
+                      <td><span class="normal">正常</span></td>
+                      <td>运行</td>
+                      <td>停止</td>
+                      <td>78</td>
+                      <td>Ⅲ</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>68</td>
+                    </tr>
+                    <tr>
+                      <td>16:23:07</td>
+                      <td><span class="normal">正常</span></td>
+                      <td>运行</td>
+                      <td>停止</td>
+                      <td>78</td>
+                      <td>Ⅲ</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>68</td>
+                    </tr>
+                    <tr>
+                      <td>16:23:07</td>
+                      <td><span class="normal">正常</span></td>
+                      <td>运行</td>
+                      <td>停止</td>
+                      <td>78</td>
+                      <td>Ⅲ</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>68</td>
+                    </tr>
+                    <tr>
+                      <td>16:23:07</td>
+                      <td><span class="normal">正常</span></td>
+                      <td>运行</td>
+                      <td>停止</td>
+                      <td>78</td>
+                      <td>Ⅲ</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>68</td>
+                    </tr>
+                    <tr>
+                      <td>16:23:07</td>
+                      <td><span class="normal">正常</span></td>
+                      <td>运行</td>
+                      <td>停止</td>
+                      <td>78</td>
+                      <td>Ⅲ</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>68</td>
+                    </tr>
+                    <tr>
+                      <td>16:23:07</td>
+                      <td><span class="normal">正常</span></td>
+                      <td>运行</td>
+                      <td>停止</td>
+                      <td>78</td>
+                      <td>Ⅲ</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>68</td>
+                    </tr>
+                    <tr>
+                      <td>16:23:07</td>
+                      <td><span class="excessive">超标</span></td>
+                      <td>运行</td>
+                      <td>停止</td>
+                      <td>78</td>
+                      <td>Ⅲ</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>68</td>
+                    </tr>
+
+                  </table>
+                </div>
+                <div class="info_2">
+                  <table>
+                    <tr>
+                      <td>排水</td>
+                      <td>水质等级</td>
+                      <td>最近报警：DOC +60%</td>
+                      <td>报警时间：15:33:06</td>
+                    </tr>
+                    <tr>
+                      <td>正常</td>
+                      <td>|||</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </table>
+                  <div class="drop_down">
+                    <a href="javascript:" id="btn2"
+                       style="background:url(images/drop_down.png)no-repeat center top/contain"></a>
+                  </div>
+                </div>
+                <div class="details_list" id="table2" style="display:none;">
+                  <table>
+                    <tr>
+                      <th>时间</th>
+                      <th>状态</th>
+                      <th>BOD<sup>5</sup> <span>(mg/L)</span></th>
+                      <th>COD<sup>CR</sup> <span>(mg/L)</span></th>
+                      <th>ss <span>(mg/L)</span></th>
+                      <th>动植物油 <span>(mg/L)</span></th>
+                      <th>LAS <span>(mg/m3)</span></th>
+                      <th>NH3-N <span>(mg/m3)</span></th>
+                      <th>PH <span>(mg/m3)</span></th>
+                      <th>DO <span>(mg/m3)</span></th>
+                      <th>电导率 <span>(mg/m3)</span></th>
+                      <th>浊度 <span>(m)</span></th>
+                    </tr>
+                    <tr>
+                      <td>16:23:07</td>
+                      <td><span class="normal">正常</span></td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>16:23:07</td>
+                      <td><span class="normal">正常</span></td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>16:23:07</td>
+                      <td><span class="normal">正常</span></td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>16:23:07</td>
+                      <td><span class="normal">正常</span></td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>16:23:07</td>
+                      <td><span class="normal">正常</span></td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>16:23:07</td>
+                      <td><span class="normal">正常</span></td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>16:23:07</td>
+                      <td><span class="normal">正常</span></td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>16:23:07</td>
+                      <td><span class="excessive">超标</span></td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>26</td>
+                      <td>4</td>
+
+                    </tr>
+
+                  </table>
+                </div>
+                <!--
+                                <div class="info_3">
+                                  <table>
+                                    <tr>
+                                      <td>餐厨垃圾堆放点</td>
+                                      <td>垃圾处理去向</td>
+                                      <td>最近报警：VOC +60%</td>
+                                      <td>报警时间：15:33:06</td>
+                                    </tr>
+                                    <tr>
+                                      <td>正常</td>
+                                      <td>管理处集中收集</td>
+                                      <td></td>
+                                      <td></td>
+                                    </tr>
+                                  </table>
+                                  <div class="drop_down">
+                                    <a href="javascript:" id="btn3"
+                                       style="background:url(images/drop_down.png)no-repeat center top/contain"></a>
+                                  </div>
+                                </div>
+                -->
+              </div>
+              <div class="switchItem">
+                <div class="info_1">
+                  <table>
+                    <tr>
+                      <td>监测点名称</td>
+                      <td>监测状态</td>
+                      <td>风机状态</td>
+                      <td>净化器状态</td>
+                      <td>净化率</td>
+                      <td>清洁度</td>
+                      <td>运转率</td>
+                      <td>回收油量</td>
+                      <td>最近报警</td>
+                    </tr>
+                    <tr>
+                      <td>赛百诺油烟监测点001</td>
+                      <td class="normal">正常</td>
+                      <td class="operation">运行</td>
+                      <td class="stop">停止</td>
+                      <td>69%</td>
+                      <td>|||</td>
+                      <td>49%</td>
+                      <td>302L</td>
+                      <td>VOC+60%</td>
+                      <td></td>
+                    </tr>
+                  </table>
+                  <div class="drop_down">
+                    <a href="javascript:" id="btn4"
+                       style="background:url(images/drop_down.png)no-repeat center top/contain"></a>
+                  </div>
+                </div>
+                <div id="detail1" class="details_list clf" style="display:none;">
+                  <p class="title">油烟实时监测值</p>
+                  <span class="absUnit">单位：mg/m³</span>
+                  <div id="lampblackMonitor"></div>
+                  <div class="fr">
+                    <div>
+                      <span>油烟浓度</span>
+                      <small>↑</small>
+                      <b>29</b>
+                    </div>
+                    <div>
+                      <span>VOC浓度</span>
+                      <small>↑</small>
+                      <b>73</b>
+                    </div>
+                    <div>
+                      <span>颗粒物浓度</span>
+                      <small>↓</small>
+                      <b>8</b>
+                    </div>
+                  </div>
+                </div>
+                <div class="info_2">
+                  <table>
+                    <tr>
+                      <td>排水</td>
+                      <td>水质等级</td>
+                      <td>最近报警：DOC +60%</td>
+                      <td>报警时间：15:33:06</td>
+                    </tr>
+                    <tr>
+                      <td>正常</td>
+                      <td>|||</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </table>
+                  <div class="drop_down">
+                    <a href="javascript:" id="btn5"
+                       style="background:url(images/drop_down.png)no-repeat center top/contain"></a>
+                  </div>
+                </div>
+                <div id="detail2" class="details_list clf" style="display:none;">
+                  <p class="title">废水实时监测值</p>
+                  <div id="wasteWaterMonitor"></div>
+                  <div class="numberValues fr">
+                    <div>
+                      <span>BOD</span>
+                      <small>↑</small>
+                      <b>300</b>
+                    </div>
+                    <div>
+                      <span>COD</span>
+                      <small>↑</small>
+                      <b>1200</b>
+                    </div>
+                    <div>
+                      <span>SS</span>
+                      <small>↑</small>
+                      <b>300</b>
+                    </div>
+                    <div>
+                      <span>动植物油</span>
+                      <small>↑</small>
+                      <b>200</b>
+                    </div>
+                    <div>
+                      <span>LAS</span>
+                      <small>↑</small>
+                      <b>10</b>
+                    </div>
+                    <div>
+                      <span>NH3-N</span>
+                      <small>↑</small>
+                      <b>20</b>
+                    </div>
+                    <div>
+                      <span>PH</span>
+                      <small>↑</small>
+                      <b>14</b>
+                    </div>
+                    <div>
+                      <span>DO</span>
+                      <small>↑</small>
+                      <b>86</b>
+                    </div>
+                    <div>
+                      <span>电导率</span>
+                      <small>↑</small>
+                      <b>80000</b>
+                    </div>
+                    <div>
+                      <span>浊度</span>
+                      <small>↑</small>
+                      <b>3000</b>
+                    </div>
+                  </div>
+                  <div class="clf"></div>
+                  <div class="charts clf">
+                    <div id="monitor1"></div>
+                    <div id="monitor2"></div>
+                    <div id="monitor3"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mainDiv alarmRecord">
+          <div class="table">
+            <table>
+              <tr>
+                <th>序号</th>
+                <th>时间</th>
+                <th>监测点</th>
+                <th>设备序列号</th>
+                <th>指标</th>
+                <th>监测值</th>
+                <th>超标</th>
+                <th>报警等级</th>
+                <th>区域</th>
+                <th>视频</th>
+              </tr>
+
+              <tr>
+                <td>1001</td>
+                <td>2018-4-12 11:25:23</td>
+                <td>烟道排口</td>
+                <td>KJGHGKJGJHGJG</td>
+                <td>VOC</td>
+                <td>210mg/m²</td>
+                <td>20%</td>
+                <td>严重</td>
+                <td>南山区</td>
+                <td><a href="javascript:" class="playBtn"></a></td>
+              </tr>
+              <tr>
+                <td>1001</td>
+                <td>2018-4-12 11:25:23</td>
+                <td>烟道排口</td>
+                <td>KJGHGKJGJHGJG</td>
+                <td>VOC</td>
+                <td>210mg/m²</td>
+                <td>20%</td>
+                <td>严重</td>
+                <td>南山区</td>
+                <td><a href="javascript:" class="playBtn"></a></td>
+              </tr>
+              <tr>
+                <td>1001</td>
+                <td>2018-4-12 11:25:23</td>
+                <td>烟道排口</td>
+                <td>KJGHGKJGJHGJG</td>
+                <td>VOC</td>
+                <td>210mg/m²</td>
+                <td>20%</td>
+                <td>严重</td>
+                <td>南山区</td>
+                <td><a href="javascript:" class="playBtn"></a></td>
+              </tr>
+              <tr>
+                <td>1001</td>
+                <td>2018-4-12 11:25:23</td>
+                <td>烟道排口</td>
+                <td>KJGHGKJGJHGJG</td>
+                <td>VOC</td>
+                <td>210mg/m²</td>
+                <td>20%</td>
+                <td>严重</td>
+                <td>南山区</td>
+                <td><a href="javascript:" class="playBtn"></a></td>
+              </tr>
+              <tr>
+                <td>1001</td>
+                <td>2018-4-12 11:25:23</td>
+                <td>烟道排口</td>
+                <td>KJGHGKJGJHGJG</td>
+                <td>VOC</td>
+                <td>210mg/m²</td>
+                <td>20%</td>
+                <td>严重</td>
+                <td>南山区</td>
+                <td><a href="javascript:" class="playBtn"></a></td>
+              </tr>
+              <tr>
+                <td>1001</td>
+                <td>2018-4-12 11:25:23</td>
+                <td>烟道排口</td>
+                <td>KJGHGKJGJHGJG</td>
+                <td>VOC</td>
+                <td>210mg/m²</td>
+                <td>20%</td>
+                <td>严重</td>
+                <td>南山区</td>
+                <td><a href="javascript:" class="playBtn"></a></td>
+              </tr>
+              <tr>
+                <td>1001</td>
+                <td>2018-4-12 11:25:23</td>
+                <td>烟道排口</td>
+                <td>KJGHGKJGJHGJG</td>
+                <td>VOC</td>
+                <td>210mg/m²</td>
+                <td>20%</td>
+                <td>严重</td>
+                <td>南山区</td>
+                <td><a href="javascript:" class="playBtn"></a></td>
+              </tr>
+              <tr>
+                <td>1001</td>
+                <td>2018-4-12 11:25:23</td>
+                <td>烟道排口</td>
+                <td>KJGHGKJGJHGJG</td>
+                <td>VOC</td>
+                <td>210mg/m²</td>
+                <td>20%</td>
+                <td>严重</td>
+                <td>南山区</td>
+                <td><a href="javascript:" class="playBtn"></a></td>
+              </tr>
+              <tr>
+                <td>1001</td>
+                <td>2018-4-12 11:25:23</td>
+                <td>烟道排口</td>
+                <td>KJGHGKJGJHGJG</td>
+                <td>VOC</td>
+                <td>210mg/m²</td>
+                <td>20%</td>
+                <td>严重</td>
+                <td>南山区</td>
+                <td><a href="javascript:" class="playBtn"></a></td>
+              </tr>
+              <tr>
+                <td>1001</td>
+                <td>2018-4-12 11:25:23</td>
+                <td>烟道排口</td>
+                <td>KJGHGKJGJHGJG</td>
+                <td>VOC</td>
+                <td>210mg/m²</td>
+                <td>20%</td>
+                <td>严重</td>
+                <td>南山区</td>
+                <td><a href="javascript:" class="playBtn"></a></td>
+              </tr>
+              <tr>
+                <td>1001</td>
+                <td>2018-4-12 11:25:23</td>
+                <td>烟道排口</td>
+                <td>KJGHGKJGJHGJG</td>
+                <td>VOC</td>
+                <td>210mg/m²</td>
+                <td>20%</td>
+                <td>严重</td>
+                <td>南山区</td>
+                <td><a href="javascript:" class="playBtn"></a></td>
+              </tr>
+              <tr>
+                <td>1001</td>
+                <td>2018-4-12 11:25:23</td>
+                <td>烟道排口</td>
+                <td>KJGHGKJGJHGJG</td>
+                <td>VOC</td>
+                <td>210mg/m²</td>
+                <td>20%</td>
+                <td>严重</td>
+                <td>南山区</td>
+                <td><a href="javascript:" class="playBtn"></a></td>
+              </tr>
+              <tr>
+                <td>1001</td>
+                <td>2018-4-12 11:25:23</td>
+                <td>烟道排口</td>
+                <td>KJGHGKJGJHGJG</td>
+                <td>VOC</td>
+                <td>210mg/m²</td>
+                <td>20%</td>
+                <td>严重</td>
+                <td>南山区</td>
+                <td><a href="javascript:" class="playBtn"></a></td>
+              </tr>
+            </table>
+
+          </div>
+          <div class="clf page">
+            <span class="sp1">共 <i>1000</i> 条</span>
+            <a href="javascript:">&lt;</a>
+            <a href="javascript:">1</a>
+            <a href="javascript:">2</a>
+            <a href="javascript:">3</a>
+            <a href="javascript:">4</a>
+            <span>...</span>
+            <a href="javascript:">10</a>
+            <a href="javascript:">&gt;</a>
+            <span class="sp2">前往 <input type="text" title="" value="3"> 页</span>
+          </div>
+        </div>
+        <div class="mainDiv">
+          <div class="table">
+            <table>
+              <tr>
+                <th>序号</th>
+                <th>时间</th>
+                <th>监测点</th>
+                <th>设备序列号</th>
+                <th>指标</th>
+                <th>监测值</th>
+                <th>超标</th>
+                <th>报警等级</th>
+                <th>区域</th>
+                <th>视频</th>
+              </tr>
+
+              <tr>
+                <td>1001</td>
+                <td>2018-4-12 11:25:23</td>
+                <td>烟道排口</td>
+                <td>KJGHGKJGJHGJG</td>
+                <td>VOC</td>
+                <td>210mg/m²</td>
+                <td>20%</td>
+                <td>严重</td>
+                <td>南山区</td>
+                <td><a href="javascript:" class="playBtn"></a></td>
+              </tr>
+              <tr>
+                <td>1001</td>
+                <td>2018-4-12 11:25:23</td>
+                <td>烟道排口</td>
+                <td>KJGHGKJGJHGJG</td>
+                <td>VOC</td>
+                <td>210mg/m²</td>
+                <td>20%</td>
+                <td>严重</td>
+                <td>南山区</td>
+                <td><a href="javascript:" class="playBtn"></a></td>
+              </tr>
+              <tr>
+                <td>1001</td>
+                <td>2018-4-12 11:25:23</td>
+                <td>烟道排口</td>
+                <td>KJGHGKJGJHGJG</td>
+                <td>VOC</td>
+                <td>210mg/m²</td>
+                <td>20%</td>
+                <td>严重</td>
+                <td>南山区</td>
+                <td><a href="javascript:" class="playBtn"></a></td>
+              </tr>
+              <tr>
+                <td>1001</td>
+                <td>2018-4-12 11:25:23</td>
+                <td>烟道排口</td>
+                <td>KJGHGKJGJHGJG</td>
+                <td>VOC</td>
+                <td>210mg/m²</td>
+                <td>20%</td>
+                <td>严重</td>
+                <td>南山区</td>
+                <td><a href="javascript:" class="playBtn"></a></td>
+              </tr>
+              <tr>
+                <td>1001</td>
+                <td>2018-4-12 11:25:23</td>
+                <td>烟道排口</td>
+                <td>KJGHGKJGJHGJG</td>
+                <td>VOC</td>
+                <td>210mg/m²</td>
+                <td>20%</td>
+                <td>严重</td>
+                <td>南山区</td>
+                <td><a href="javascript:" class="playBtn"></a></td>
+              </tr>
+              <tr>
+                <td>1001</td>
+                <td>2018-4-12 11:25:23</td>
+                <td>烟道排口</td>
+                <td>KJGHGKJGJHGJG</td>
+                <td>VOC</td>
+                <td>210mg/m²</td>
+                <td>20%</td>
+                <td>严重</td>
+                <td>南山区</td>
+                <td><a href="javascript:" class="playBtn"></a></td>
+              </tr>
+              <tr>
+                <td>1001</td>
+                <td>2018-4-12 11:25:23</td>
+                <td>烟道排口</td>
+                <td>KJGHGKJGJHGJG</td>
+                <td>VOC</td>
+                <td>210mg/m²</td>
+                <td>20%</td>
+                <td>严重</td>
+                <td>南山区</td>
+                <td><a href="javascript:" class="playBtn"></a></td>
+              </tr>
+              <tr>
+                <td>1001</td>
+                <td>2018-4-12 11:25:23</td>
+                <td>烟道排口</td>
+                <td>KJGHGKJGJHGJG</td>
+                <td>VOC</td>
+                <td>210mg/m²</td>
+                <td>20%</td>
+                <td>严重</td>
+                <td>南山区</td>
+                <td><a href="javascript:" class="playBtn"></a></td>
+              </tr>
+              <tr>
+                <td>1001</td>
+                <td>2018-4-12 11:25:23</td>
+                <td>烟道排口</td>
+                <td>KJGHGKJGJHGJG</td>
+                <td>VOC</td>
+                <td>210mg/m²</td>
+                <td>20%</td>
+                <td>严重</td>
+                <td>南山区</td>
+                <td><a href="javascript:" class="playBtn"></a></td>
+              </tr>
+              <tr>
+                <td>1001</td>
+                <td>2018-4-12 11:25:23</td>
+                <td>烟道排口</td>
+                <td>KJGHGKJGJHGJG</td>
+                <td>VOC</td>
+                <td>210mg/m²</td>
+                <td>20%</td>
+                <td>严重</td>
+                <td>南山区</td>
+                <td><a href="javascript:" class="playBtn"></a></td>
+              </tr>
+              <tr>
+                <td>1001</td>
+                <td>2018-4-12 11:25:23</td>
+                <td>烟道排口</td>
+                <td>KJGHGKJGJHGJG</td>
+                <td>VOC</td>
+                <td>210mg/m²</td>
+                <td>20%</td>
+                <td>严重</td>
+                <td>南山区</td>
+                <td><a href="javascript:" class="playBtn"></a></td>
+              </tr>
+              <tr>
+                <td>1001</td>
+                <td>2018-4-12 11:25:23</td>
+                <td>烟道排口</td>
+                <td>KJGHGKJGJHGJG</td>
+                <td>VOC</td>
+                <td>210mg/m²</td>
+                <td>20%</td>
+                <td>严重</td>
+                <td>南山区</td>
+                <td><a href="javascript:" class="playBtn"></a></td>
+              </tr>
+              <tr>
+                <td>1001</td>
+                <td>2018-4-12 11:25:23</td>
+                <td>烟道排口</td>
+                <td>KJGHGKJGJHGJG</td>
+                <td>VOC</td>
+                <td>210mg/m²</td>
+                <td>20%</td>
+                <td>严重</td>
+                <td>南山区</td>
+                <td><a href="javascript:" class="playBtn"></a></td>
+              </tr>
+            </table>
+
+          </div>
+          <div class="clf page">
+            <span class="sp1">共 <i>1000</i> 条</span>
+            <a href="javascript:">&lt;</a>
+            <a href="javascript:">1</a>
+            <a href="javascript:">2</a>
+            <a href="javascript:">3</a>
+            <a href="javascript:">4</a>
+            <span>...</span>
+            <a href="javascript:">10</a>
+            <a href="javascript:">&gt;</a>
+            <span class="sp2">前往 <input type="text" title="" value="3"> 页</span>
+          </div>
+        </div>
+        <div class="mainDiv situation">
+          <div class="statistics">
+            <div id="controlRates" class="chartDiv"></div>
+            <div id="qualityGrade" class="chartDiv"></div>
+            <div id="exceedCause" class="chartDiv"></div>
+            <div id="exceedProportion" class="chartDiv"></div>
+          </div>
+          <div class="contrastDeta">
+            <!-- 环比 -->
+            <div class="chain fl">
+              <p class="dataTit">环比</p>
+              <div class="data clf">
+                <table class="dataTable fl" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <th></th>
+                    <th>本月</th>
+                    <th>上月</th>
+                    <th>涨幅</th>
+                  </tr>
+                  <tr>
+                    <td>超标总次数</td>
+                    <td>6</td>
+                    <td>8</td>
+                    <td class="icon up">20%</td>
+                  </tr>
+                  <tr>
+                    <td>单次最大超标时长<br>
+                      <small>(分钟)</small>
+                    </td>
+                    <td>120</td>
+                    <td>360</td>
+                    <td class="icon up">30%</td>
+                  </tr>
+                  <tr>
+                    <td>累计超标时长<br>
+                      <small>(分钟)</small>
+                    </td>
+                    <td>500</td>
+                    <td>600</td>
+                    <td class="icon up">30%</td>
+                  </tr>
+                </table>
+                <div id="linkRelative" class="dataChart fr"></div>
+              </div>
+            </div>
+
+            <!-- 同比 -->
+            <div class="yoy fr clf">
+              <p class="dataTit">同比</p>
+              <div class="data clf">
+                <table class="dataTable fl" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <th></th>
+                    <th>本月</th>
+                    <th>上月</th>
+                    <th>涨幅</th>
+                  </tr>
+                  <tr>
+                    <td>超标总次数</td>
+                    <td>6</td>
+                    <td>8</td>
+                    <td class="icon up">20%</td>
+                  </tr>
+                  <tr>
+                    <td>单次最大超标时长<br>
+                      <small>(分钟)</small>
+                    </td>
+                    <td>120</td>
+                    <td>360</td>
+                    <td class="icon up">30%</td>
+                  </tr>
+                  <tr>
+                    <td>累计超标时长<br>
+                      <small>(分钟)</small>
+                    </td>
+                    <td>500</td>
+                    <td>600</td>
+                    <td class="icon up">30%</td>
+                  </tr>
+                </table>
+                <div id="onYearOnYear" class="dataChart fr"></div>
+              </div>
+            </div>
+          </div>
+          <!-- 历史排名 -->
+          <div class="ranking">
+            <div class="chartTitle">历史排名</div>
+            <div id="historyRank" class="chart"></div>
+          </div>
+        </div>
+        <div class="mainDiv facilityInfo">
+          <div class="info_1">
+            <table cellpadding="0" cellspacing="0">
+              <tr>
+                <th>名称</th>
+                <th>类型</th>
+                <th>设备数</th>
+                <th>健康状态</th>
+                <th>验收状态</th>
+                <th>审核状态</th>
+                <th>启用状态</th>
+              </tr>
+              <tr>
+                <td>烟道监测点</td>
+                <td>烟道</td>
+                <td>3</td>
+                <td>正常</td>
+                <td>已验收</td>
+                <td>已审核</td>
+                <td>启用</td>
+              </tr>
+            </table>
+            <div class="drop_down">
+              <a href="javascript:" id="facilityInfoBtn_1"
+                 style="background:url(images/drop_down.png)no-repeat center top/contain"></a>
+            </div>
+          </div>
+          <!--詳情列表-->
+          <div class="details_list" id="facilityInfoTable_1" style="display:none;">
+            <table>
+              <tr>
+                <th>序号</th>
+                <th>设备类型</th>
+                <th>序列号</th>
+                <th>工作状态</th>
+                <th>报警次数</th>
+                <th>运行记录</th>
+                <th>报警记录</th>
+                <th>维保记录</th>
+              </tr>
+              <tr>
+                <td>10001</td>
+                <td>油烟检测</td>
+                <td>ASDFG123456789</td>
+                <td>运行</td>
+                <td>6</td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>10001</td>
+                <td>油烟检测</td>
+                <td>ASDFG123456789</td>
+                <td>运行</td>
+                <td>6</td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>10001</td>
+                <td>油烟检测</td>
+                <td>ASDFG123456789</td>
+                <td>运行</td>
+                <td>6</td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>10001</td>
+                <td>油烟检测</td>
+                <td>ASDFG123456789</td>
+                <td>运行</td>
+                <td>6</td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>10001</td>
+                <td>油烟检测</td>
+                <td>ASDFG123456789</td>
+                <td>运行</td>
+                <td>6</td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>10001</td>
+                <td>油烟检测</td>
+                <td>ASDFG123456789</td>
+                <td>运行</td>
+                <td>6</td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="info_1">
+            <table cellpadding="0" cellspacing="0">
+              <tr>
+                <th>名称</th>
+                <th>类型</th>
+                <th>设备数</th>
+                <th>健康状态</th>
+                <th>验收状态</th>
+                <th>审核状态</th>
+                <th>启用状态</th>
+              </tr>
+              <tr>
+                <td>烟道监测点</td>
+                <td>烟道</td>
+                <td>3</td>
+                <td>正常</td>
+                <td>已验收</td>
+                <td>已审核</td>
+                <td>启用</td>
+              </tr>
+            </table>
+            <div class="drop_down">
+              <a href="javascript:" id="facilityInfoBtn_2"
+                 style="background:url(images/drop_down.png)no-repeat center top/contain"></a>
+            </div>
+          </div>
+          <!--詳情列表-->
+          <div class="details_list" id="facilityInfoTable_2" style="display:none;">
+            <table>
+              <tr>
+                <th>序号</th>
+                <th>设备类型</th>
+                <th>序列号</th>
+                <th>工作状态</th>
+                <th>报警次数</th>
+                <th>运行记录</th>
+                <th>报警记录</th>
+                <th>维保记录</th>
+              </tr>
+              <tr>
+                <td>10001</td>
+                <td>油烟检测</td>
+                <td>ASDFG123456789</td>
+                <td>运行</td>
+                <td>6</td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>10001</td>
+                <td>油烟检测</td>
+                <td>ASDFG123456789</td>
+                <td>运行</td>
+                <td>6</td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>10001</td>
+                <td>油烟检测</td>
+                <td>ASDFG123456789</td>
+                <td>运行</td>
+                <td>6</td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>10001</td>
+                <td>油烟检测</td>
+                <td>ASDFG123456789</td>
+                <td>运行</td>
+                <td>6</td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>10001</td>
+                <td>油烟检测</td>
+                <td>ASDFG123456789</td>
+                <td>运行</td>
+                <td>6</td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>10001</td>
+                <td>油烟检测</td>
+                <td>ASDFG123456789</td>
+                <td>运行</td>
+                <td>6</td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+                <td>
+                  <a href="javascript:">
+                    <img src="images/search.png">
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dv3 rightSidebar">
+      <!--搜索-->
+      <div class="clf search">
+        <form action="" class="searchInp">
+          <input type="text" placeholder="请输入企业名称">
+          <input type="button">
+        </form>
+      </div>
+      <div class="detailBox">
+<!--
+        <div class="back"><a href="#"> < 返回 </a></div>
+        <div>
+          <span class="sp1">深圳市江南乡餐饮有限公司</span><span class="sp2">正常</span>
+          <p>营业时间：8:00-23:00</p>
+        </div>
+        <div>门店名称：江南乡</div>
+        <div>企业性质：合伙</div>
+        <div>生产经营类别：中餐厅</div>
+        <div>投产时间：2018年4月1日</div>
+        <div>员工人数：23人</div>
+        <div>营业执照代码：12345678-9</div>
+        <div>法人：张先生</div>
+        <div>广东省深圳市南山区高新中一道19号科技大厦A座101</div>
+        <div>18112341234</div>
+-->
+        <div class="back"><a href="javascript:"> < 返回 </a></div>
+        <div class="filtrate">
+          <select title="addr">
+            <option value="">所有区域</option>
+            <option value="">北京</option>
+            <option value="">上海</option>
+            <option value="">广州</option>
+            <option value="">深圳</option>
+          </select>
+          <select title="scale">
+            <option value="">所有规模</option>
+            <option value="">规模1</option>
+            <option value="">规模2</option>
+            <option value="">规模3</option>
+          </select>
+          <select title="scale">
+            <option value="">超标</option>
+            <option value="">超标1</option>
+            <option value="">超标2</option>
+            <option value="">超标3</option>
+          </select>
+        </div>
+        <ul class="list">
+          <li>
+            <a href="javascript:">
+              <span>1</span>
+              <span>江南乡</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:">
+              <span>1</span>
+              <span>江南乡</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:">
+              <span>1</span>
+              <span>江南乡</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:">
+              <span>1</span>
+              <span>江南乡</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:">
+              <span>1</span>
+              <span>江南乡</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:">
+              <span>1</span>
+              <span>江南乡</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:">
+              <span>1</span>
+              <span>江南乡</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:">
+              <span>1</span>
+              <span>江南乡</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:">
+              <span>1</span>
+              <span>江南乡</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:">
+              <span>1</span>
+              <span>江南乡</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:">
+              <span>1</span>
+              <span>江南乡</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:">
+              <span>1</span>
+              <span>江南乡</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:">
+              <span>1</span>
+              <span>江南乡</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:">
+              <span>1</span>
+              <span>江南乡</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:">
+              <span>1</span>
+              <span>江南乡</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/echarts.min.js"></script>
+<script>
+
+
+  var lampblackMonitor = echarts.init(document.getElementById('lampblackMonitor'));
+  var lampblackMonitorOption = {
+    color: ['#00ffff', '#f48545', '#95d64e'],
+    tooltip: {
+      trigger: 'axis'
+    },
+    legend: {
+      data: ['油烟浓度', 'VOC浓度', '颗粒物浓度'],
+      textStyle: {
+        color: ['#58b1fb']
+      }
+    },
+    grid: {
+      left: '3%',
+      right: '4%',
+      bottom: '3%',
+      containLabel: true
+    },
+    xAxis: [
+      {
+        type: 'category',
+        boundaryGap: false,
+        data: ['12:00', '12:30', '13:00', '13:30', '14:00', '14:30', '15:00', '15:30'],
+        nameTextStyle: {
+          color: ['#59b2fb']
+        },
+        splitLine: {
+          show: false,
+          lineStyle: {
+            color: ['#0087ED']
+          }
+        },
+        axisLine: {
+          lineStyle: {
+            color: '#0087ED',
+            width: 1
+          }
+        }
+      }
+    ],
+    yAxis: [
+      {
+        type: 'value',
+        nameTextStyle: {
+          color: ['#59b2fb']
+        },
+        splitLine: {
+          show: false,
+          lineStyle: {
+            color: ['#0087ED']
+          }
+        },
+        axisLine: {
+          lineStyle: {
+            color: '#0087ED',
+            width: 1
+          }
+        }
+      }
+    ],
+    series: [
+      {
+        name: '油烟浓度',
+        type: 'line',
+        stack: '总量',
+        data: [120, 132, 101, 134, 90, 230, 210, 220]
+      },
+      {
+        name: 'VOC浓度',
+        type: 'line',
+        stack: '总量',
+        data: [220, 182, 191, 234, 290, 330, 310, 280]
+      },
+      {
+        name: '颗粒物浓度',
+        type: 'line',
+        stack: '总量',
+        data: [150, 232, 201, 154, 190, 330, 410, 390]
+      }
+    ]
+  };
+  lampblackMonitor.setOption(lampblackMonitorOption);
+
+
+  var wasteWaterMonitor = echarts.init(document.getElementById('wasteWaterMonitor'));
+  var wasteWaterMonitorOption = {
+    color: ['#81cded', '#3fa4ff', '#9591f2', '#8e6ce9', '#c888d9', '#db6f8f'],
+    tooltip: {
+      trigger: 'axis'
+    },
+    legend: {
+      data: ['BOD', 'COD', 'SS', '动植物油', 'LAS', 'NH3-N'],
+      textStyle: {
+        color: ['#58b1fb']
+      }
+    },
+    grid: {
+      left: '3%',
+      right: '4%',
+      bottom: '3%',
+      containLabel: true
+    },
+    xAxis: [
+      {
+        type: 'category',
+        boundaryGap: false,
+        data: ['12:00', '12:30', '13:00', '13:30', '14:00', '14:30', '15:00', '15:30'],
+        nameTextStyle: {
+          color: ['#59b2fb']
+        },
+        splitLine: {
+          show: false,
+          lineStyle: {
+            color: ['#0087ED']
+          }
+        },
+        axisLine: {
+          lineStyle: {
+            color: '#0087ED',
+            width: 1
+          }
+        }
+      }
+    ],
+    yAxis: [
+      {
+        type: 'value',
+        nameTextStyle: {
+          color: ['#59b2fb']
+        },
+        splitLine: {
+          show: false,
+          lineStyle: {
+            color: ['#0087ED']
+          }
+        },
+        axisLine: {
+          lineStyle: {
+            color: '#0087ED',
+            width: 1
+          }
+        }
+      }
+    ],
+    series: [
+      {
+        name: 'BOD',
+        type: 'line',
+        stack: '总量',
+        data: [120, 132, 101, 134, 90, 230, 210, 220]
+      },
+      {
+        name: 'COD',
+        type: 'line',
+        stack: '总量',
+        data: [220, 182, 191, 234, 290, 330, 310, 280]
+      },
+      {
+        name: 'SS',
+        type: 'line',
+        stack: '总量',
+        data: [150, 232, 201, 154, 190, 330, 410, 390]
+      },
+      {
+        name: '动植物油',
+        type: 'line',
+        stack: '总量',
+        data: [150, 232, 201, 154, 190, 330, 410, 390]
+      },
+      {
+        name: 'LAS',
+        type: 'line',
+        stack: '总量',
+        data: [150, 232, 201, 154, 190, 330, 410, 390]
+      },
+      {
+        name: 'NH3-N',
+        type: 'line',
+        stack: '总量',
+        data: [150, 232, 201, 154, 190, 330, 410, 390]
+      }
+    ]
+  };
+  wasteWaterMonitor.setOption(wasteWaterMonitorOption);
+
+
+  var monitor1 = echarts.init(document.getElementById('monitor1'));
+  var monitor1Option = {
+    color: ['#65e0e3', '#37a2da', '#d7c781'],
+    tooltip: {
+      trigger: 'axis'
+    },
+    legend: {
+      data: ['电导率', '溶解氧', '平均值'],
+      textStyle: {
+        color: ['#58b1fb']
+      }
+    },
+    grid: {
+      left: '3%',
+      right: '4%',
+      bottom: '3%',
+      containLabel: true
+    },
+    xAxis: [
+      {
+        type: 'category',
+        data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+        axisPointer: {
+          type: 'shadow'
+        },
+        show: false
+      }
+    ],
+    yAxis: [
+      {
+        type: 'value',
+        name: ' ',
+        min: 0,
+        max: 250,
+        interval: 50,
+        axisLabel: {
+          formatter: '{value}'
+        },
+        nameTextStyle: {
+          color: ['#59b2fb']
+        },
+        splitLine: {
+          show: false,
+          lineStyle: {
+            color: ['#0087ED']
+          }
+        },
+        axisLine: {
+          lineStyle: {
+            color: '#0087ED',
+            width: 1
+          }
+        }
+      },
+      {
+        type: 'value',
+        name: ' ',
+        min: 0,
+        max: 25,
+        interval: 5,
+        axisLabel: {
+          formatter: '{value}'
+        },
+        nameTextStyle: {
+          color: ['#59b2fb']
+        },
+        splitLine: {
+          show: false,
+          lineStyle: {
+            color: ['#0087ED']
+          }
+        },
+        axisLine: {
+          lineStyle: {
+            color: '#0087ED',
+            width: 1
+          }
+        }
+      }
+    ],
+    series: [
+      {
+        name: '电导率',
+        type: 'bar',
+        data: [2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3]
+      },
+      {
+        name: '溶解氧',
+        type: 'bar',
+        data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]
+      },
+      {
+        name: '平均值',
+        type: 'line',
+        yAxisIndex: 1,
+        data: [2.0, 2.2, 3.3, 4.5, 6.3, 10.2, 20.3, 23.4, 23.0, 16.5, 12.0, 6.2]
+      }
+    ]
+  };
+  monitor1.setOption(monitor1Option);
+
+
+  var monitor2 = echarts.init(document.getElementById('monitor2'));
+  var monitor2Option = {
+    color: ['#65e0e3', '#37a2da', '#d7c781'],
+    tooltip: {
+      trigger: 'axis'
+    },
+    legend: {
+      data: ['PH', '温度', '平均值'],
+      textStyle: {
+        color: ['#58b1fb']
+      }
+    },
+    grid: {
+      left: '3%',
+      right: '4%',
+      bottom: '3%',
+      containLabel: true
+    },
+    xAxis: [
+      {
+        type: 'category',
+        data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+        axisPointer: {
+          type: 'shadow'
+        },
+        show: false
+      }
+    ],
+    yAxis: [
+      {
+        type: 'value',
+        name: ' ',
+        min: 0,
+        max: 250,
+        interval: 50,
+        axisLabel: {
+          formatter: '{value}'
+        },
+        nameTextStyle: {
+          color: ['#59b2fb']
+        },
+        splitLine: {
+          show: false,
+          lineStyle: {
+            color: ['#0087ED']
+          }
+        },
+        axisLine: {
+          lineStyle: {
+            color: '#0087ED',
+            width: 1
+          }
+        }
+      },
+      {
+        type: 'value',
+        name: ' ',
+        min: 0,
+        max: 25,
+        interval: 5,
+        axisLabel: {
+          formatter: '{value}'
+        },
+        nameTextStyle: {
+          color: ['#59b2fb']
+        },
+        splitLine: {
+          show: false,
+          lineStyle: {
+            color: ['#0087ED']
+          }
+        },
+        axisLine: {
+          lineStyle: {
+            color: '#0087ED',
+            width: 1
+          }
+        }
+      }
+    ],
+    series: [
+      {
+        name: 'PH',
+        type: 'bar',
+        data: [2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3]
+      },
+      {
+        name: '温度',
+        type: 'bar',
+        data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]
+      },
+      {
+        name: '平均值',
+        type: 'line',
+        yAxisIndex: 1,
+        data: [2.0, 2.2, 3.3, 4.5, 6.3, 10.2, 20.3, 23.4, 23.0, 16.5, 12.0, 6.2]
+      }
+    ]
+  };
+  monitor2.setOption(monitor2Option);
+
+
+  var monitor3 = echarts.init(document.getElementById('monitor3'));
+  var monitor3Option = {
+    color: ['#65e0e3', '#37a2da', '#d7c781'],
+    tooltip: {
+      trigger: 'axis'
+    },
+    legend: {
+      data: ['浊度', '温度', '平均值'],
+      textStyle: {
+        color: ['#58b1fb']
+      }
+    },
+    grid: {
+      left: '3%',
+      right: '4%',
+      bottom: '3%',
+      containLabel: true
+    },
+    xAxis: [
+      {
+        type: 'category',
+        data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+        axisPointer: {
+          type: 'shadow'
+        },
+        show: false
+      }
+    ],
+    yAxis: [
+      {
+        type: 'value',
+        name: ' ',
+        min: 0,
+        max: 250,
+        interval: 50,
+        axisLabel: {
+          formatter: '{value}'
+        },
+        nameTextStyle: {
+          color: ['#59b2fb']
+        },
+        splitLine: {
+          show: false,
+          lineStyle: {
+            color: ['#0087ED']
+          }
+        },
+        axisLine: {
+          lineStyle: {
+            color: '#0087ED',
+            width: 1
+          }
+        }
+      },
+      {
+        type: 'value',
+        name: ' ',
+        min: 0,
+        max: 25,
+        interval: 5,
+        axisLabel: {
+          formatter: '{value}'
+        },
+        nameTextStyle: {
+          color: ['#59b2fb']
+        },
+        splitLine: {
+          show: false,
+          lineStyle: {
+            color: ['#0087ED']
+          }
+        },
+        axisLine: {
+          lineStyle: {
+            color: '#0087ED',
+            width: 1
+          }
+        }
+      }
+    ],
+    series: [
+      {
+        name: '浊度',
+        type: 'bar',
+        data: [2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3]
+      },
+      {
+        name: '温度',
+        type: 'bar',
+        data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]
+      },
+      {
+        name: '平均值',
+        type: 'line',
+        yAxisIndex: 1,
+        data: [2.0, 2.2, 3.3, 4.5, 6.3, 10.2, 20.3, 23.4, 23.0, 16.5, 12.0, 6.2]
+      }
+    ]
+  };
+  monitor3.setOption(monitor3Option);
+
+
+  var controlRates = echarts.init(document.getElementById('controlRates'));
+  var controlRatesOption = {
+    title: {
+      text: '企业达标率',
+      textStyle: {
+        color: '#fff',
+        fontSize: 16
+      },
+      x: 'center',
+      top: 15
+    },
+    tooltip: {
+      trigger: 'item',
+      formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    series: [
+      {
+        name: '访问来源',
+        type: 'pie',
+        radius: ['37.5%', '50%'],
+        center: ['50%', '65%'],
+        avoidLabelOverlap: false,
+        label: {
+          normal: {
+            position: 'center'
+          },
+          emphasis: {
+            textStyle: {
+              fontSize: '30'
+            }
+          }
+        },
+        labelLine: {
+          normal: {
+            show: false
+          }
+        },
+        data: [
+          {value: 75, name: '75%'},
+          {value: 25, name: ''}
+        ]
+      }
+    ],
+    color: ['#a4cb5d', 'rgba(7,147,255,.15)']
+  };
+  controlRates.setOption(controlRatesOption);
+
+
+  var qualityGrade = echarts.init(document.getElementById('qualityGrade'));
+  var qualityGradeOption = {
+    color: ['#36cbcb', '#ef904a', '#f2637b', '#805ce8'],
+    title: {
+      text: '质量等级占比',
+      textStyle: {
+        color: '#fff',
+        fontSize: 16
+      },
+      x: 'center',
+      top: 15
+    },
+    tooltip: {
+      trigger: 'axis',
+      axisPointer: {
+        type: 'shadow'
+      }
+    },
+    legend: {
+      data: ['12:00', '12:30', '13:00', '13:30']
+    },
+    grid: {
+      top: '35%',
+      left: '5%',
+      right: '10%',
+      bottom: '5%',
+      containLabel: true
+    },
+    xAxis: {
+      type: 'value',
+      show: false,
+      nameTextStyle: {
+        color: ['#59b2fb']
+      },
+      splitLine: {
+        show: false,
+        lineStyle: {
+          color: ['#0087ED']
+        }
+      },
+      axisLine: {
+        lineStyle: {
+          color: '#0087ED',
+          width: 1
+        }
+      }
+
+    },
+    yAxis: {
+      type: 'category',
+      data: ['油烟', '废水'],
+      nameTextStyle: {
+        color: ['#59b2fb']
+      },
+      splitLine: {
+        show: false,
+        lineStyle: {
+          color: ['#0087ED']
+        }
+      },
+      axisLine: {
+        lineStyle: {
+          color: '#0087ED',
+          width: 1
+        }
+      }
+    },
+    series: [
+      {
+        name: '达标',
+        type: 'bar',
+        barWidth: '16px',
+        stack: '总量',
+        data: [320, 302]
+      },
+      {
+        name: '超标',
+        type: 'bar',
+        barWidth: '16px',
+        stack: '总量',
+        data: [120, 132]
+      },
+      {
+        name: '严重超标',
+        type: 'bar',
+        barWidth: '16px',
+        stack: '总量',
+        data: [120, 132]
+      },
+      {
+        name: '未检测',
+        type: 'bar',
+        barWidth: '16px',
+        stack: '总量',
+        data: [120, 132]
+      }
+    ]
+  };
+  qualityGrade.setOption(qualityGradeOption);
+
+
+  var exceedCause = echarts.init(document.getElementById('exceedCause'));
+  var exceedCauseOption = {
+    color: ['#7cc1ff', '#805ce8'],
+    title: {
+      text: '超标原因占比 水/气',
+      textStyle: {
+        color: '#fff',
+        fontSize: 16
+      },
+      x: 'center',
+      top: 15
+    },
+    tooltip: {
+      trigger: 'item',
+      formatter: "{a} <br/>{b} : {c} ({d}%)"
+    },
+    series: [
+      {
+        name: '超标原因占比 水/气',
+        type: 'pie',
+        radius: ['37.5%', '50%'],
+        center: ['50%', '65%'],
+        data: [
+          {value: 335, name: '油烟'},
+          {value: 310, name: '废水'}
+        ],
+        itemStyle: {
+          emphasis: {
+            shadowBlur: 10,
+            shadowOffsetX: 0,
+            shadowColor: 'rgba(0, 0, 0, 0.5)'
+          }
+        }
+      }
+    ]
+  };
+  exceedCause.setOption(exceedCauseOption);
+
+
+  var exceedProportion = echarts.init(document.getElementById('exceedProportion'));
+  var exceedProportionOption = {
+    color: [
+      '#3aa1ff',
+      '#88d1ea',
+      '#36cbcb',
+      '#82dfbe',
+      '#4ecb73',
+      '#acdf82',
+      '#acdf82',
+      '#fbd437',
+      '#eaa674',
+      '#f2637b',
+      '#dc81d2',
+      '#975fe5',
+      '#9f8bf0'
+    ],
+    title: {
+      text: '超标指标占比',
+      textStyle: {
+        color: '#fff',
+        fontSize: 14
+      },
+      x: 'center',
+      top: 15
+    },
+    tooltip: {
+      trigger: 'item',
+      formatter: "{a} <br/>{b} : {c} ({d}%)"
+    },
+    legend: {
+      type: 'scroll',
+      textStyle: {
+        color: '#59b3ff',
+        fontSize: '12px'
+      },
+      orient: 'vertical',
+      left: '3%',
+      top: '30%',
+      bottom: '5%',
+      data: ['VOC1', 'VOC2', 'VOC3', 'VOC4', 'VOC5', 'VOC6', 'VOC7', 'VOC8', 'VOC9', 'VOC10', 'VOC11', 'VOC12'],
+      pageIconColor: '#3aa1ff',
+      pageIconInactiveColor: 'rgba(58,161,255,.5)'
+    },
+    series: [
+      {
+        name: '半径模式',
+        type: 'pie',
+        radius: ['14%', '47%'],
+        center: ['65%', '65%'],
+        roseType: 'radius',
+        label: {
+          normal: {
+            show: false
+          },
+          emphasis: {
+            show: true
+          }
+        },
+        lableLine: {
+          normal: {
+            show: false
+          },
+          emphasis: {
+            show: true
+          }
+        },
+        data: [
+          {value: 19, name: 'VOC1'},
+          {value: 18, name: 'VOC2'},
+          {value: 22, name: 'VOC3'},
+          {value: 25, name: 'VOC4'},
+          {value: 27, name: 'VOC5'},
+          {value: 21, name: 'VOC6'},
+          {value: 26, name: 'VOC7'},
+          {value: 30, name: 'VOC8'},
+          {value: 33, name: 'VOC9'},
+          {value: 26, name: 'VOC10'},
+          {value: 27, name: 'VOC11'},
+          {value: 33, name: 'VOC12'}
+        ]
+      }
+    ]
+  };
+  exceedProportion.setOption(exceedProportionOption);
+
+
+  var linkRelative = echarts.init(document.getElementById('linkRelative'));
+  var linkRelativeOption = {
+    color: ['#339ad8', '#5ed2e0', '#e7cd67', '#e79886', '#cb61b0'],
+    title: {
+      text: '超标指标占比',
+      textStyle: {
+        color: '#fff',
+        fontSize: 16
+      },
+      x: 'center',
+      top: 0
+    },
+    tooltip: {
+      trigger: 'item',
+      formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    series: [
+      {
+        name: '访问来源',
+        type: 'pie',
+        radius: ['5%', '35%'],
+        center: ['50%', '60%'],
+        label: {
+          normal: {
+            show: false
+          }
+        },
+        data: [
+          {value: 20, name: '直达'},
+          {value: 33, name: '邮件营销'},
+          {value: 20, name: '联盟广告'},
+          {value: 20, name: '视频广告'},
+          {value: 93, name: '百度'}
+        ]
+      },
+      {
+        name: '访问来源',
+        type: 'pie',
+        radius: ['50%', '70%'],
+        center: ['50%', '60%'],
+        label: {
+          normal: {
+            show: false
+          }
+        },
+        data: [
+          {value: 33, name: '直达'},
+          {value: 67, name: '邮件营销'},
+          {value: 33, name: '联盟广告'},
+          {value: 33, name: '视频广告'},
+          {value: 20, name: '百度'}
+        ]
+      }
+    ]
+  };
+  linkRelative.setOption(linkRelativeOption);
+
+
+  var onYearOnYear = echarts.init(document.getElementById('onYearOnYear'));
+  var onYearOnYearOption = {
+    color: ['#339ad8', '#5ed2e0', '#e7cd67', '#e79886', '#cb61b0'],
+    title: {
+      text: '超标指标占比',
+      textStyle: {
+        color: '#fff',
+        fontSize: 16
+      },
+      x: 'center',
+      top: 0
+    },
+    tooltip: {
+      trigger: 'item',
+      formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    series: [
+      {
+        name: '访问来源',
+        type: 'pie',
+        radius: ['5%', '35%'],
+        center: ['50%', '60%'],
+        label: {
+          normal: {
+            show: false
+          }
+        },
+        data: [
+          {value: 20, name: '直达'},
+          {value: 33, name: '邮件营销'},
+          {value: 20, name: '联盟广告'},
+          {value: 20, name: '视频广告'},
+          {value: 93, name: '百度'}
+        ]
+      },
+      {
+        name: '访问来源',
+        type: 'pie',
+        radius: ['50%', '70%'],
+        center: ['50%', '60%'],
+        label: {
+          normal: {
+            show: false
+          }
+        },
+        data: [
+          {value: 33, name: '直达'},
+          {value: 67, name: '邮件营销'},
+          {value: 33, name: '联盟广告'},
+          {value: 33, name: '视频广告'},
+          {value: 20, name: '百度'}
+        ]
+      }
+    ]
+  };
+  onYearOnYear.setOption(onYearOnYearOption);
+
+
+  var historyRank = echarts.init(document.getElementById('historyRank'));
+  var historyRankOption = {
+    color: ['#54cce2', '#339ad8'],
+    tooltip: {
+      trigger: 'axis'
+    },
+    legend: {
+      data: ['油烟', '废水'],
+      textStyle: {
+        color: ['#58b1fb']
+      },
+      top: 0,
+      right: '10%'
+    },
+    grid: {
+      left: '3%',
+      right: '4%',
+      bottom: '2%',
+      containLabel: true
+    },
+    xAxis: [
+      {
+        type: 'category',
+        data: ['9/30', '9/30', '9/30', '9/30', '9/30', '9/30', '9/30', '9/30', '9/30', '9/30', '9/30', '9/30'],
+        axisPointer: {
+          type: 'shadow'
+        },
+        nameTextStyle: {
+          color: ['#59b2fb']
+        },
+        splitLine: {
+          show: false,
+          lineStyle: {
+            color: ['#0087ED']
+          }
+        },
+        axisLine: {
+          lineStyle: {
+            color: '#0087ED',
+            width: 1
+          }
+        }
+      }
+    ],
+    yAxis: [
+      {
+        type: 'value',
+        name: ' ',
+        min: 0,
+        max: 250,
+        interval: 50,
+        axisLabel: {
+          formatter: '{value}'
+        },
+        nameTextStyle: {
+          color: ['#59b2fb']
+        },
+        splitLine: {
+          show: false,
+          lineStyle: {
+            color: ['#0087ED']
+          }
+        },
+        axisLine: {
+          lineStyle: {
+            color: '#0087ED',
+            width: 1
+          }
+        }
+      }
+    ],
+    series: [
+      {
+        name: '油烟',
+        type: 'bar',
+        barWidth: '15px',
+        data: [66, 55, 77, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 44, 33]
+      },
+      {
+        name: '废水',
+        type: 'bar',
+        barWidth: '15px',
+        data: [44, 55, 66, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 33, 66, 33]
+      }
+    ]
+  };
+  historyRank.setOption(historyRankOption);
+
+
+  $(function () {
+    var tabsOptionA = $('.tabsOption > a');
+    tabsOptionA.on('click', function () {
+      setTimeout(function () {
+        controlRates.resize();
+        qualityGrade.resize();
+        exceedCause.resize();
+        exceedProportion.resize();
+        linkRelative.resize();
+        onYearOnYear.resize();
+        historyRank.resize();
+      }, 1)
+    })
+
+  });
+
+
+  $(window).resize(function () {
+
+    controlRates.resize();
+    qualityGrade.resize();
+    exceedCause.resize();
+    exceedProportion.resize();
+    linkRelative.resize();
+    onYearOnYear.resize();
+    historyRank.resize();
+  })
+
+
+</script>
+<script>
+
+  $(function () {
+
+    // 选项卡
+    function Tab(option, active, tabObj, siblingObj) {
+      var $bp = $(option);
+      $bp.click(function () {
+        $(this).addClass(active).siblings().removeClass(active);
+        var index = $bp.index(this);
+        $(tabObj).eq(index).show().siblings(siblingObj).hide();
+      });
+    }
+
+    // main 切换
+    Tab(
+      '.main .tabsOption > a',
+      'active',
+      '.main > .mainTab > .mainDiv',
+      '.mainDiv'
+    );
+
+
+    var cutover = $('.box .menu .cutover');
+    var firstDiv = $('.main > .mainTab > .mainDiv:first');
+    $('.main .tabsOption > a').on('click', function () {
+      firstDiv.css('display') === 'none' ? cutover.hide() : cutover.show();
+    });
+
+
+  })
+
+</script>
+</body>
+</html>

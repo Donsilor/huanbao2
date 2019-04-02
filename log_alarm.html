@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>报警日志</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/qyxx_list.css">
+</head>
+<body>
+<div class="bk">
+  <!--header-->
+  <div class="clf header">
+    <div class="head_1"><a href="index.html">餐饮业环保综合管理系统</a></div>
+    <div class="head_2"><img src="images/header_1.png" alt=""></div>
+    <div class="clf head_3">
+      <div class=" fl btn">
+        <a href="qyxx_list.html" class="btn1">企业管理</a>
+        <a href="log_alarm.html" class="btn2 current">报警管理</a>
+        <a href="tsfx-zlpj.html" class="btn3">统计分析</a>
+        <a href="#" class="btn4">监督管理</a>
+        <a href="#" class="btn5">运维管理</a>
+        <a href="#" class="btn6">系统管理</a>
+      </div>
+      <div class="clf fr right">
+
+        <div class="user"><a href="#"><img src="images/user.png" alt=""></a></div>
+
+        <div class="notice">
+          <a href="#"><img src="images/notice.png" alt=""></a>
+          <span>2</span>
+        </div>
+        <div class="email">
+          <a href="#"><img src="images/email.png" alt=""></a>
+          <span>3</span>
+        </div>
+
+        <div class="area"><a href="#">深圳市<i></i></a></div>
+
+        <div class="time">15:33:06</div>
+        <div class="year">2018年1月25日</div>
+      </div>
+    </div>
+    <div class="head_4"><img src="images/header_2.png" alt=""></div>
+  </div>
+
+  <!--搜索-->
+  <div class="clf search">
+    <form action="" class="searchInp">
+      <input type="text" placeholder="请输入关键字">
+      <input type="button">
+    </form>
+  </div>
+
+  <!--左边按钮-->
+  <div class="left_btn">
+    <a href="javascript:" class="current">报警日志</a>
+    <a href="javascript:">系统日志</a>
+  </div>
+
+  <div class="box">
+    <!-- 时间选择 -->
+    <div class="clf dateBar fl">
+      <div class="date"><span>2017/11/24至2017/11/24</span></div>
+    </div>
+
+    <!-- 监测报警 & 设备报警 -->
+    <div class="alarmTab">
+      <a href="javascript:" class="active">监测报警</a>
+      <a href="javascript:">设备报警</a>
+    </div>
+    <div class="alarmType">
+      <div class="typeDiv">
+        <div class="clf count">
+          <!--报警数量占比-->
+          <div class="b2">
+            <div class="c_title">报警数量占比</div>
+            <div class="clf info">
+              <div class="i_left">
+                <div class="s1"><span>报警总数</span> <span><i>1256</i> 个</span></div>
+                <div class="s2"><span>报警单位</span> <span><i>2365</i> 家</span></div>
+              </div>
+              <div id="scaleScale" class="i_right"></div>
+            </div>
+          </div>
+          <!--报警区域占比-->
+          <div class="b1">
+            <div class="c_title">报警区域占比</div>
+            <div id="corpDistribute"></div>
+          </div>
+          <!--报警类型占比-->
+          <div class="b3">
+            <div class="c_title">报警类型占比</div>
+            <div class="clf info">
+              <div class="i_left">
+                <div class="s1"><span>硬件故障</span> <span><i>60</i> %</span></div>
+                <div class="s2"><span>网络故障</span> <span><i>40</i> %</span></div>
+              </div>
+              <div id="complete" class="i_right"></div>
+            </div>
+          </div>
+          <!--报警TOP6企业-->
+          <div class="b4">
+            <div class="c_title">报警TOP6企业</div>
+            <div class="clf info">
+              <div class="i_top6">
+                <div class="item">
+                  <span>1</span>
+                  <p>深圳江南香有限公司</p>
+                </div>
+                <div class="item">
+                  <span>2</span>
+                  <p>深圳江南香有限公司</p>
+                </div>
+                <div class="item">
+                  <span>3</span>
+                  <p>深圳江南香有限公司</p>
+                </div>
+                <div class="item">
+                  <span>4</span>
+                  <p>深圳江南香有限公司</p>
+                </div>
+                <div class="item">
+                  <span>5</span>
+                  <p>深圳江南香有限公司</p>
+                </div>
+                <div class="item">
+                  <span>6</span>
+                  <p>深圳江南香有限公司</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="table">
+          <table>
+            <tr>
+              <th>序号</th>
+              <th>时间</th>
+              <th>企业名称</th>
+              <th>监测点</th>
+              <th>设备</th>
+              <th>指标</th>
+              <th>监测值</th>
+              <th>超标</th>
+              <th>报警等级</th>
+              <th>区域</th>
+              <th>视频</th>
+            </tr>
+            <tr>
+              <td>10001</td>
+              <td>2018-4-12 11:25:23</td>
+              <td>深圳市江南香餐饮有限公司</td>
+              <td>烟道排口</td>
+              <td>KJGHKJGJHGJG</td>
+              <td>VOC</td>
+              <td>210mg/m³</td>
+              <td>20%</td>
+              <td><span class="alarmLevel_1">提示</span></td>
+              <td>南山区</td>
+              <td><a href="javascript:"><img src="images/icon_play.png"></a></td>
+            </tr>
+            <tr>
+              <td>10001</td>
+              <td>2018-4-12 11:25:23</td>
+              <td>深圳市江南香餐饮有限公司</td>
+              <td>烟道排口</td>
+              <td>KJGHKJGJHGJG</td>
+              <td>VOC</td>
+              <td>210mg/m³</td>
+              <td>20%</td>
+              <td><span class="alarmLevel_2">提示</span></td>
+              <td>南山区</td>
+              <td><a href="javascript:"><img src="images/icon_play.png"></a></td>
+            </tr>
+            <tr>
+              <td>10001</td>
+              <td>2018-4-12 11:25:23</td>
+              <td>深圳市江南香餐饮有限公司</td>
+              <td>烟道排口</td>
+              <td>KJGHKJGJHGJG</td>
+              <td>VOC</td>
+              <td>210mg/m³</td>
+              <td>20%</td>
+              <td><span class="alarmLevel_3">提示</span></td>
+              <td>南山区</td>
+              <td><a href="javascript:"><img src="images/icon_play.png"></a></td>
+            </tr>
+            <tr>
+              <td>10001</td>
+              <td>2018-4-12 11:25:23</td>
+              <td>深圳市江南香餐饮有限公司</td>
+              <td>烟道排口</td>
+              <td>KJGHKJGJHGJG</td>
+              <td>VOC</td>
+              <td>210mg/m³</td>
+              <td>20%</td>
+              <td><span class="alarmLevel_4">提示</span></td>
+              <td>南山区</td>
+              <td><a href="javascript:"><img src="images/icon_play.png"></a></td>
+            </tr>
+            <tr>
+              <td>10001</td>
+              <td>2018-4-12 11:25:23</td>
+              <td>深圳市江南香餐饮有限公司</td>
+              <td>烟道排口</td>
+              <td>KJGHKJGJHGJG</td>
+              <td>VOC</td>
+              <td>210mg/m³</td>
+              <td>20%</td>
+              <td><span class="alarmLevel_1">提示</span></td>
+              <td>南山区</td>
+              <td><a href="javascript:"><img src="images/icon_play.png"></a></td>
+            </tr>
+            <tr>
+              <td>10001</td>
+              <td>2018-4-12 11:25:23</td>
+              <td>深圳市江南香餐饮有限公司</td>
+              <td>烟道排口</td>
+              <td>KJGHKJGJHGJG</td>
+              <td>VOC</td>
+              <td>210mg/m³</td>
+              <td>20%</td>
+              <td><span class="alarmLevel_1">提示</span></td>
+              <td>南山区</td>
+              <td><a href="javascript:"><img src="images/icon_play.png"></a></td>
+            </tr>
+            <tr>
+              <td>10001</td>
+              <td>2018-4-12 11:25:23</td>
+              <td>深圳市江南香餐饮有限公司</td>
+              <td>烟道排口</td>
+              <td>KJGHKJGJHGJG</td>
+              <td>VOC</td>
+              <td>210mg/m³</td>
+              <td>20%</td>
+              <td><span class="alarmLevel_1">提示</span></td>
+              <td>南山区</td>
+              <td><a href="javascript:"><img src="images/icon_play.png"></a></td>
+            </tr>
+            <tr>
+              <td>10001</td>
+              <td>2018-4-12 11:25:23</td>
+              <td>深圳市江南香餐饮有限公司</td>
+              <td>烟道排口</td>
+              <td>KJGHKJGJHGJG</td>
+              <td>VOC</td>
+              <td>210mg/m³</td>
+              <td>20%</td>
+              <td><span class="alarmLevel_1">提示</span></td>
+              <td>南山区</td>
+              <td><a href="javascript:"><img src="images/icon_play.png"></a></td>
+            </tr>
+            <tr>
+              <td>10001</td>
+              <td>2018-4-12 11:25:23</td>
+              <td>深圳市江南香餐饮有限公司</td>
+              <td>烟道排口</td>
+              <td>KJGHKJGJHGJG</td>
+              <td>VOC</td>
+              <td>210mg/m³</td>
+              <td>20%</td>
+              <td><span class="alarmLevel_1">提示</span></td>
+              <td>南山区</td>
+              <td><a href="javascript:"><img src="images/icon_play.png"></a></td>
+            </tr>
+            <tr>
+              <td>10001</td>
+              <td>2018-4-12 11:25:23</td>
+              <td>深圳市江南香餐饮有限公司</td>
+              <td>烟道排口</td>
+              <td>KJGHKJGJHGJG</td>
+              <td>VOC</td>
+              <td>210mg/m³</td>
+              <td>20%</td>
+              <td><span class="alarmLevel_1">提示</span></td>
+              <td>南山区</td>
+              <td><a href="javascript:"><img src="images/icon_play.png"></a></td>
+            </tr>
+          </table>
+
+        </div>
+        <div class="clf page">
+          <span class="sp1">共 <i>1000</i> 条</span>
+          <a href="javascript:">&lt;</a>
+          <a href="javascript:">1</a>
+          <a href="javascript:">2</a>
+          <a href="javascript:">3</a>
+          <a href="javascript:">4</a>
+          <span>...</span>
+          <a href="javascript:">10</a>
+          <a href="javascript:">&gt;</a>
+          <span class="sp2">前往 <input type="text" title="" value="3"> 页</span>
+        </div>
+      </div>
+      <div class="typeDiv">
+        <div class="clf count">
+          <!--报警数量占比-->
+          <div class="b2">
+            <div class="c_title">报警数量占比</div>
+            <div class="clf info">
+              <div class="i_left">
+                <div class="s1"><span>报警总数</span> <span><i>1256</i> 个</span></div>
+                <div class="s2"><span>报警单位</span> <span><i>2365</i> 家</span></div>
+              </div>
+              <div id="scaleScale2" class="i_right"></div>
+            </div>
+          </div>
+          <!--报警区域占比-->
+          <div class="b1">
+            <div class="c_title">报警区域占比</div>
+            <div id="corpDistribute2"></div>
+          </div>
+          <!--报警类型占比-->
+          <div class="b3">
+            <div class="c_title">报警类型占比</div>
+            <div class="clf info">
+              <div class="i_left">
+                <div class="s1"><span>硬件故障</span> <span><i>60</i> %</span></div>
+                <div class="s2"><span>网络故障</span> <span><i>40</i> %</span></div>
+              </div>
+              <div id="complete2" class="i_right"></div>
+            </div>
+          </div>
+          <!--报警TOP6企业-->
+          <div class="b4">
+            <div class="c_title">报警TOP6企业</div>
+            <div class="clf info">
+              <div class="i_top6">
+                <div class="item">
+                  <span>1</span>
+                  <p>深圳江南香有限公司</p>
+                </div>
+                <div class="item">
+                  <span>2</span>
+                  <p>深圳江南香有限公司</p>
+                </div>
+                <div class="item">
+                  <span>3</span>
+                  <p>深圳江南香有限公司</p>
+                </div>
+                <div class="item">
+                  <span>4</span>
+                  <p>深圳江南香有限公司</p>
+                </div>
+                <div class="item">
+                  <span>5</span>
+                  <p>深圳江南香有限公司</p>
+                </div>
+                <div class="item">
+                  <span>6</span>
+                  <p>深圳江南香有限公司</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="table">
+          <table>
+            <tr>
+              <th>序号</th>
+              <th>时间</th>
+              <th>设备</th>
+              <th>企业名称</th>
+              <th>报警位置</th>
+              <th>类型</th>
+              <th>原因</th>
+              <th>报警等级</th>
+              <th>区域</th>
+            </tr>
+            <tr>
+              <td>10002</td>
+              <td>2018-4-12 11:25:23</td>
+              <td>KJGHKJGJHGJG</td>
+              <td>深圳市江南香餐饮有限公司</td>
+              <td>烟道排口</td>
+              <td>硬件故障</td>
+              <td>VOC传感器故障</td>
+              <td><span class="alarmLevel_1">提示</span></td>
+              <td>南山区</td>
+            </tr>
+            <tr>
+              <td>10002</td>
+              <td>2018-4-12 11:25:23</td>
+              <td>KJGHKJGJHGJG</td>
+              <td>深圳市江南香餐饮有限公司</td>
+              <td>烟道排口</td>
+              <td>硬件故障</td>
+              <td>VOC传感器故障</td>
+              <td><span class="alarmLevel_2">提示</span></td>
+              <td>南山区</td>
+            </tr>
+            <tr>
+              <td>10002</td>
+              <td>2018-4-12 11:25:23</td>
+              <td>KJGHKJGJHGJG</td>
+              <td>深圳市江南香餐饮有限公司</td>
+              <td>烟道排口</td>
+              <td>硬件故障</td>
+              <td>VOC传感器故障</td>
+              <td><span class="alarmLevel_3">提示</span></td>
+              <td>南山区</td>
+            </tr>
+            <tr>
+              <td>10002</td>
+              <td>2018-4-12 11:25:23</td>
+              <td>KJGHKJGJHGJG</td>
+              <td>深圳市江南香餐饮有限公司</td>
+              <td>烟道排口</td>
+              <td>硬件故障</td>
+              <td>VOC传感器故障</td>
+              <td><span class="alarmLevel_4">提示</span></td>
+              <td>南山区</td>
+            </tr>
+            <tr>
+              <td>10002</td>
+              <td>2018-4-12 11:25:23</td>
+              <td>KJGHKJGJHGJG</td>
+              <td>深圳市江南香餐饮有限公司</td>
+              <td>烟道排口</td>
+              <td>硬件故障</td>
+              <td>VOC传感器故障</td>
+              <td><span class="alarmLevel_1">提示</span></td>
+              <td>南山区</td>
+            </tr>
+            <tr>
+              <td>10002</td>
+              <td>2018-4-12 11:25:23</td>
+              <td>KJGHKJGJHGJG</td>
+              <td>深圳市江南香餐饮有限公司</td>
+              <td>烟道排口</td>
+              <td>硬件故障</td>
+              <td>VOC传感器故障</td>
+              <td><span class="alarmLevel_1">提示</span></td>
+              <td>南山区</td>
+            </tr>
+            <tr>
+              <td>10002</td>
+              <td>2018-4-12 11:25:23</td>
+              <td>KJGHKJGJHGJG</td>
+              <td>深圳市江南香餐饮有限公司</td>
+              <td>烟道排口</td>
+              <td>硬件故障</td>
+              <td>VOC传感器故障</td>
+              <td><span class="alarmLevel_1">提示</span></td>
+              <td>南山区</td>
+            </tr>
+            <tr>
+              <td>10002</td>
+              <td>2018-4-12 11:25:23</td>
+              <td>KJGHKJGJHGJG</td>
+              <td>深圳市江南香餐饮有限公司</td>
+              <td>烟道排口</td>
+              <td>硬件故障</td>
+              <td>VOC传感器故障</td>
+              <td><span class="alarmLevel_1">提示</span></td>
+              <td>南山区</td>
+            </tr>
+            <tr>
+              <td>10002</td>
+              <td>2018-4-12 11:25:23</td>
+              <td>KJGHKJGJHGJG</td>
+              <td>深圳市江南香餐饮有限公司</td>
+              <td>烟道排口</td>
+              <td>硬件故障</td>
+              <td>VOC传感器故障</td>
+              <td><span class="alarmLevel_1">提示</span></td>
+              <td>南山区</td>
+            </tr>
+            <tr>
+              <td>10002</td>
+              <td>2018-4-12 11:25:23</td>
+              <td>KJGHKJGJHGJG</td>
+              <td>深圳市江南香餐饮有限公司</td>
+              <td>烟道排口</td>
+              <td>硬件故障</td>
+              <td>VOC传感器故障</td>
+              <td><span class="alarmLevel_1">提示</span></td>
+              <td>南山区</td>
+            </tr>
+          </table>
+
+        </div>
+        <div class="clf page">
+          <span class="sp1">共 <i>1000</i> 条</span>
+          <a href="javascript:">&lt;</a>
+          <a href="javascript:">1</a>
+          <a href="javascript:">2</a>
+          <a href="javascript:">3</a>
+          <a href="javascript:">4</a>
+          <span>...</span>
+          <a href="javascript:">10</a>
+          <a href="javascript:">&gt;</a>
+          <span class="sp2">前往 <input type="text" title="" value="3"> 页</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/echarts.min.js"></script>
+<script>
+
+  var corpDistribute = echarts.init(document.getElementById('corpDistribute'));
+  var corpDistributeOption = {
+    tooltip: {
+      trigger: 'axis',
+      axisPointer: {
+        type: 'shadow'
+      }
+    },
+    grid: {
+      top: '4%',
+      left: 0,
+      right: '4%',
+      bottom: 0,
+      containLabel: true
+    },
+    xAxis: {
+      type: 'category',
+      splitLine: {
+        show: false,
+        lineStyle: {
+          color: ['#0087ED']
+        }
+      },
+      nameTextStyle: {
+        color: ['#59b2fb']
+      },
+      axisLine: {
+        lineStyle: {
+          color: '#0087ED',
+          width: 1
+        }
+      },
+      data: ['盐田', '盐田', '盐田', '盐田', '盐田', '盐田', '盐田', '盐田', '盐田', '盐田'],
+      axisLabel: {
+        interval: 0,
+        rotate: 45
+      }
+    },
+    yAxis: {
+      type: 'value',
+      splitLine: {
+        show: false,
+        lineStyle: {
+          color: ['#0087ED']
+        }
+      },
+      nameTextStyle: {
+        color: ['#59b2fb']
+      },
+      axisLine: {
+        lineStyle: {
+          color: '#0087ED',
+          width: 1
+        }
+      }
+    },
+    series: [
+      {
+        name: '大型',
+        type: 'bar',
+        stack: '总量',
+        barWidth: '15px',
+        data: [200, 250, 100, 250, 300, 300, 200, 150, 100, 200],
+        itemStyle: {
+          normal: {
+            color: '#80daff'
+          }
+
+        }
+      },
+      {
+        name: '中型',
+        type: 'bar',
+        stack: '总量',
+        barWidth: '15px',
+        data: [150, 150, 150, 150, 60, 150, 50, 150, 100, 80],
+        itemStyle: {
+          normal: {
+            color: '#00b0ff'
+          }
+        }
+      },
+      {
+        name: '小型',
+        type: 'bar',
+        stack: '总量',
+        barWidth: '15px',
+        data: [40, 40, 40, 40, 40, 40, 40, 40, 40, 40],
+        itemStyle: {
+          normal: {
+            color: '#1261dd'
+          }
+        }
+      }
+    ]
+  };
+  corpDistribute.setOption(corpDistributeOption);
+
+
+  var scaleScale = echarts.init(document.getElementById('scaleScale'));
+  var scaleScaleOption = {
+    color: ['#80daff', '#00b0ff', '#1261dd'],
+    tooltip: {
+      trigger: 'item',
+      formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    series: [
+      {
+        name: '占比',
+        type: 'pie',
+        radius: ['55%', '80%'],
+        avoidLabelOverlap: false,
+        label: {
+          normal: {
+            show: false,
+            position: 'center'
+          },
+          emphasis: {
+            show: true,
+            textStyle: {
+              fontSize: 16
+            }
+          }
+        },
+        labelLine: {
+          normal: {
+            show: false
+          }
+        },
+        data: [
+          {value: 248, name: '大型'},
+          {value: 335, name: '中型'},
+          {value: 335, name: '小型'}
+        ]
+      }
+    ]
+  };
+  scaleScale.setOption(scaleScaleOption);
+
+
+  var complete = echarts.init(document.getElementById('complete'));
+  var completeOption = {
+    color: ['#80daff', '#00b0ff', '#1261dd'],
+    tooltip: {
+      trigger: 'item',
+      formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    series: [
+      {
+        name: '占比',
+        type: 'pie',
+        radius: ['55%', '80%'],
+        avoidLabelOverlap: false,
+        label: {
+          normal: {
+            show: false,
+            position: 'center'
+          },
+          emphasis: {
+            show: true,
+            textStyle: {
+              fontSize: 16
+            }
+          }
+        },
+        labelLine: {
+          normal: {
+            show: false
+          }
+        },
+        data: [
+          {value: 248, name: '大型'},
+          {value: 335, name: '中型'},
+          {value: 335, name: '小型'}
+        ]
+      }
+    ]
+  };
+  complete.setOption(completeOption);
+
+  var corpDistribute2 = echarts.init(document.getElementById('corpDistribute2'));
+  var corpDistribute2Option = {
+    tooltip: {
+      trigger: 'axis',
+      axisPointer: {
+        type: 'shadow'
+      }
+    },
+    grid: {
+      top: '4%',
+      left: 0,
+      right: '4%',
+      bottom: 0,
+      containLabel: true
+    },
+    xAxis: {
+      type: 'category',
+      splitLine: {
+        show: false,
+        lineStyle: {
+          color: ['#0087ED']
+        }
+      },
+      nameTextStyle: {
+        color: ['#59b2fb']
+      },
+      axisLine: {
+        lineStyle: {
+          color: '#0087ED',
+          width: 1
+        }
+      },
+      data: ['盐田', '盐田', '盐田', '盐田', '盐田', '盐田', '盐田', '盐田', '盐田', '盐田'],
+      axisLabel: {
+        interval: 0,
+        rotate: 45
+      }
+    },
+    yAxis: {
+      type: 'value',
+      splitLine: {
+        show: false,
+        lineStyle: {
+          color: ['#0087ED']
+        }
+      },
+      nameTextStyle: {
+        color: ['#59b2fb']
+      },
+      axisLine: {
+        lineStyle: {
+          color: '#0087ED',
+          width: 1
+        }
+      }
+    },
+    series: [
+      {
+        name: '大型',
+        type: 'bar',
+        stack: '总量',
+        barWidth: '15px',
+        data: [200, 250, 100, 250, 300, 300, 200, 150, 100, 200],
+        itemStyle: {
+          normal: {
+            color: '#80daff'
+          }
+
+        }
+      },
+      {
+        name: '中型',
+        type: 'bar',
+        stack: '总量',
+        barWidth: '15px',
+        data: [150, 150, 150, 150, 60, 150, 50, 150, 100, 80],
+        itemStyle: {
+          normal: {
+            color: '#00b0ff'
+          }
+        }
+      },
+      {
+        name: '小型',
+        type: 'bar',
+        stack: '总量',
+        barWidth: '15px',
+        data: [40, 40, 40, 40, 40, 40, 40, 40, 40, 40],
+        itemStyle: {
+          normal: {
+            color: '#1261dd'
+          }
+        }
+      }
+    ]
+  };
+  corpDistribute2.setOption(corpDistribute2Option);
+
+
+  var scaleScale2 = echarts.init(document.getElementById('scaleScale2'));
+  var scaleScale2Option = {
+    color: ['#80daff', '#00b0ff', '#1261dd'],
+    tooltip: {
+      trigger: 'item',
+      formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    series: [
+      {
+        name: '占比',
+        type: 'pie',
+        radius: ['55%', '80%'],
+        avoidLabelOverlap: false,
+        label: {
+          normal: {
+            show: false,
+            position: 'center'
+          },
+          emphasis: {
+            show: true,
+            textStyle: {
+              fontSize: 16
+            }
+          }
+        },
+        labelLine: {
+          normal: {
+            show: false
+          }
+        },
+        data: [
+          {value: 248, name: '大型'},
+          {value: 335, name: '中型'},
+          {value: 335, name: '小型'}
+        ]
+      }
+    ]
+  };
+  scaleScale2.setOption(scaleScale2Option);
+
+
+  var complete2 = echarts.init(document.getElementById('complete2'));
+  var complete2Option = {
+    color: ['#80daff', '#00b0ff', '#1261dd'],
+    tooltip: {
+      trigger: 'item',
+      formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    series: [
+      {
+        name: '占比',
+        type: 'pie',
+        radius: ['55%', '80%'],
+        avoidLabelOverlap: false,
+        label: {
+          normal: {
+            show: false,
+            position: 'center'
+          },
+          emphasis: {
+            show: true,
+            textStyle: {
+              fontSize: 16
+            }
+          }
+        },
+        labelLine: {
+          normal: {
+            show: false
+          }
+        },
+        data: [
+          {value: 248, name: '大型'},
+          {value: 335, name: '中型'},
+          {value: 335, name: '小型'}
+        ]
+      }
+    ]
+  };
+  complete2.setOption(complete2Option);
+
+
+</script>
+<script>
+
+  $(function () {
+
+    // 选项卡切换
+    function Tab(option, active, tabObj, siblingObj) {
+      var $tab = $(option);
+      $tab.click(function () {
+        $(this).addClass(active).siblings().removeClass(active);
+        var index = $tab.index(this);
+        $(tabObj).eq(index).show().siblings(siblingObj).hide();
+      });
+    }
+
+    // 中间主体 - 标签切换 选项卡
+    Tab('.alarmTab a', 'active', '.alarmType>.typeDiv', 'div');
+
+
+    var tabsOptionA = $('.alarmTab a');
+    tabsOptionA.on('click', function () {
+      setTimeout(function () {
+        corpDistribute.resize();
+        scaleScale.resize();
+        complete.resize();
+        corpDistribute2.resize();
+        scaleScale2.resize();
+        complete2.resize();
+      }, 1)
+    })
+
+  });
+
+
+  $(window).resize(function () {
+    corpDistribute2.resize();
+    scaleScale2.resize();
+    complete2.resize();
+
+  })
+
+
+</script>
+</body>
+</html>

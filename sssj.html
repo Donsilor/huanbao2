@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>企业信息</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/qyxx_list.css">
+</head>
+<body>
+<div class="bk">
+  <!--header-->
+  <div class="clf header">
+    <div class="head_1"><a href="index.html">餐饮业环保综合管理系统</a></div>
+    <div class="head_2"><img src="images/header_1.png" alt=""></div>
+    <div class="clf head_3">
+      <div class=" fl btn">
+        <a href="#" class="btn1 current">企业管理</a>
+        <a href="log_alarm.html" class="btn2">报警管理</a>
+        <a href="tsfx-zlpj.html" class="btn3">统计分析</a>
+        <a href="#" class="btn4">监督管理</a>
+        <a href="#" class="btn5">运维管理</a>
+        <a href="#" class="btn6">系统管理</a>
+      </div>
+      <div class="clf fr right">
+
+        <div class="user"><a href="#"><img src="images/user.png" alt=""></a></div>
+
+        <div class="notice">
+          <a href="#"><img src="images/notice.png" alt=""></a>
+          <span>2</span>
+        </div>
+        <div class="email">
+          <a href="#"><img src="images/email.png" alt=""></a>
+          <span>3</span>
+        </div>
+
+        <div class="area"><a href="#">深圳市<i></i></a></div>
+
+        <div class="time">15:33:06</div>
+        <div class="year">2018年1月25日</div>
+      </div>
+    </div>
+    <div class="head_4"><img src="images/header_2.png" alt=""></div>
+  </div>
+
+  <!--搜索-->
+  <div class="clf search">
+    <form action="" class="searchInp">
+      <input type="text" placeholder="请输入关键字">
+      <input type="button">
+    </form>
+  </div>
+
+  <!--左边按钮-->
+  <div class="left_btn"><a href="#">企业信息</a></div>
+
+  <div class="box">
+    <!--新增企业-->
+    <div class="add" id="addEnterprisBtn"><a href="#">+ 新增企业</a></div>
+
+    <div class="clf count">
+      <!--企业分布-->
+      <div class="b1">
+        <div class="c_title">企业分布</div>
+        <div id="corpDistribute"></div>
+      </div>
+      <!--企业规模占比-->
+      <div class="b2">
+        <div class="c_title">企业规模占比</div>
+        <div class="clf info">
+          <div class="i_left">
+            <div class="s1"><span>大型</span> <span><i>2674</i> 家</span></div>
+            <div class="s2"><span>中型</span> <span><i>2674</i> 家</span></div>
+            <div class="s3"><span>小型</span> <span><i>2674</i> 家</span></div>
+          </div>
+          <div id="scaleScale" class="i_right"></div>
+        </div>
+      </div>
+      <!--设施完备占比-->
+      <div class="b3">
+        <div class="c_title">设施完备占比</div>
+        <div class="clf info">
+          <div class="i_left">
+            <div class="s1"><span>环保手续完备</span> <span><i>2674</i> 家</span></div>
+            <div class="s2"><span>排水许可完备 </span> <span><i>2674</i> 家</span></div>
+            <div class="s3"><span>处置设施完备</span> <span><i>2674</i> 家</span></div>
+          </div>
+          <div id="complete" class="i_right"></div>
+        </div>
+      </div>
+      <!--涉水/涉气占比-->
+      <div class="b4">
+        <div class="c_title">涉水/涉气占比</div>
+        <div class="clf info">
+          <div class="i_left">
+            <div class="s1"><span>涉水涉气</span> <span><i>2674</i> 家</span></div>
+            <div class="s2"><span>涉水</span> <span><i>2674</i> 家</span></div>
+            <div class="s3"><span>涉气</span> <span><i>2674</i> 家</span></div>
+          </div>
+          <div id="wade" class="i_right"></div>
+        </div>
+      </div>
+    </div>
+    <div class="table">
+      <table>
+        <tr>
+          <th>序号</th>
+          <th>公司名称</th>
+          <th>区域</th>
+          <th>规模</th>
+          <th>关注度</th>
+          <th>营业执照</th>
+          <th>监控种类</th>
+          <th>状态</th>
+          <th>操作</th>
+        </tr>
+
+        <tr>
+          <td>1</td>
+          <td>深圳市江南香餐饮有限公司</td>
+          <td>南山区</td>
+          <td>中型</td>
+          <td>重点</td>
+          <td>12345678-9</td>
+          <td>油烟/废水</td>
+          <td><a href="#" class="normal">正常</a></td>
+          <td><a href="#" class="a1"></a> <a href="#" class="a2"></a> <a href="#" class="a3"></a></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>深圳市江南香餐饮有限公司</td>
+          <td>南山区</td>
+          <td>中型</td>
+          <td>重点</td>
+          <td>12345678-9</td>
+          <td>油烟/废水</td>
+          <td><a href="#" class="normal">正常</a></td>
+          <td><a href="#" class="a1"></a> <a href="#" class="a2"></a> <a href="#" class="a3"></a></td>
+        </tr>
+
+        <tr>
+          <td>1</td>
+          <td>深圳市江南香餐饮有限公司</td>
+          <td>南山区</td>
+          <td>中型</td>
+          <td>重点</td>
+          <td>12345678-9</td>
+          <td>油烟/废水</td>
+          <td><a href="#" class="excessive">超标</a></td>
+          <td><a href="#" class="a1"></a> <a href="#" class="a2"></a> <a href="#" class="a3"></a></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>深圳市江南香餐饮有限公司</td>
+          <td>南山区</td>
+          <td>中型</td>
+          <td>重点</td>
+          <td>12345678-9</td>
+          <td>油烟/废水</td>
+          <td><a href="#" class="normal">正常</a></td>
+          <td><a href="#" class="a1"></a> <a href="#" class="a2"></a> <a href="#" class="a3"></a></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>深圳市江南香餐饮有限公司</td>
+          <td>南山区</td>
+          <td>中型</td>
+          <td>重点</td>
+          <td>12345678-9</td>
+          <td>油烟/废水</td>
+          <td><a href="#" class="normal">正常</a></td>
+          <td><a href="#" class="a1"></a> <a href="#" class="a2"></a> <a href="#" class="a3"></a></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>深圳市江南香餐饮有限公司</td>
+          <td>南山区</td>
+          <td>中型</td>
+          <td>重点</td>
+          <td>12345678-9</td>
+          <td>油烟/废水</td>
+          <td><a href="#" class="normal">正常</a></td>
+          <td><a href="#" class="a1"></a> <a href="#" class="a2"></a> <a href="#" class="a3"></a></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>深圳市江南香餐饮有限公司</td>
+          <td>南山区</td>
+          <td>中型</td>
+          <td>重点</td>
+          <td>12345678-9</td>
+          <td>油烟/废水</td>
+          <td><a href="#" class="normal">正常</a></td>
+          <td><a href="#" class="a1"></a> <a href="#" class="a2"></a> <a href="#" class="a3"></a></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>深圳市江南香餐饮有限公司</td>
+          <td>南山区</td>
+          <td>中型</td>
+          <td>重点</td>
+          <td>12345678-9</td>
+          <td>油烟/废水</td>
+          <td><a href="#" class="normal">正常</a></td>
+          <td><a href="#" class="a1"></a> <a href="#" class="a2"></a> <a href="#" class="a3"></a></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>深圳市江南香餐饮有限公司</td>
+          <td>南山区</td>
+          <td>中型</td>
+          <td>重点</td>
+          <td>12345678-9</td>
+          <td>油烟/废水</td>
+          <td><a href="#" class="normal">正常</a></td>
+          <td><a href="#" class="a1"></a> <a href="#" class="a2"></a> <a href="#" class="a3"></a></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>深圳市江南香餐饮有限公司</td>
+          <td>南山区</td>
+          <td>中型</td>
+          <td>重点</td>
+          <td>12345678-9</td>
+          <td>油烟/废水</td>
+          <td><a href="#" class="normal">正常</a></td>
+          <td><a href="#" class="a1"></a> <a href="#" class="a2"></a> <a href="#" class="a3"></a></td>
+        </tr>
+      </table>
+
+    </div>
+
+    <div class="clf page">
+      <span class="sp1">共 <i>1000</i> 条</span>
+      <a href="javascript:">&lt;</a>
+      <a href="javascript:">1</a>
+      <a href="javascript:">2</a>
+      <a href="javascript:">3</a>
+      <a href="javascript:">4</a>
+      <span>...</span>
+      <a href="javascript:">10</a>
+      <a href="javascript:">&gt;</a>
+      <span class="sp2">前往 <input type="text" title="" value="3"> 页</span>
+    </div>
+    <!--
+        <div class="show">
+          每页显示
+          <select title="">
+            <option value="">10</option>
+            <option value="">15</option>
+            <option value="">20</option>
+          </select>
+        </div>
+    -->
+  </div>
+
+</div>
+<div id="layer"></div>
+<div id="addEnterpris" class="popup">
+  <a href="javascript:" class="fr closeBtn"></a>
+  <div class="topHead">
+    <span class="fl">新增企业</span>
+  </div>
+  <div class="switchProce">
+    <div class="proce">
+      <div class="proceDiv">
+        <div class="item">
+          <span>1</span>
+          <p>基本信息</p>
+        </div>
+        <div class="item">
+          <span>2</span>
+          <p>企业规模</p>
+        </div>
+        <div class="item">
+          <span>3</span>
+          <p>排口设施</p>
+        </div>
+        <div class="item">
+          <span>4</span>
+          <p>监督管理</p>
+        </div>
+        <div class="item">
+          <span>5</span>
+          <p>文件备案</p>
+        </div>
+      </div>
+      <div class="basicInfo">
+        <div class="row">
+          <span class="fl">企业名称</span>
+          <input type="text" placeholder="(必填)">
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <span class="fl">门店名称</span>
+            <input type="text" placeholder="(必填)">
+          </div>
+          <div class="col-2">
+            <span class="fl">营业时间</span>
+            <input type="text" placeholder="(必填)" class="icon-drop">
+          </div>
+        </div>
+        <div class="row">
+          <span class="fl">地址</span>
+          <input type="text" placeholder="(必填)" class="addr">
+          <a href="javascript:" class="fr icon-addr">
+            <img src="images/icon_addr.png">
+          </a>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <span class="fl">电话</span>
+            <input type="text" placeholder="(必填)">
+          </div>
+          <div class="col-2">
+            <span class="fl">联系人</span>
+            <input type="text" placeholder="(必填)">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <span class="fl">企业法人</span>
+            <input type="text" placeholder="(必填)">
+          </div>
+          <div class="col-2">
+            <span class="fl">营业执照</span>
+            <input type="text" placeholder="(必填)">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <span class="fl">经营类别</span>
+            <select title="" class="icon-drop">
+              <option value="">餐馆/中餐厅</option>
+              <option value="">餐馆/中餐厅</option>
+              <option value="">餐馆/中餐厅</option>
+              <option value="">餐馆/中餐厅</option>
+            </select>
+          </div>
+          <div class="col-2">
+            <span class="fl">投产时间</span>
+            <input type="text" class="icon-drop" title="" value="2018/12/12">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <span class="fl">员工人数</span>
+            <input type="text" placeholder="员工人数">
+          </div>
+        </div>
+      </div>
+      <div class="handleDiv">
+        <a href="javascript:" class="prevBtn">上一步</a>
+        <a href="javascript:" class="nextBtn">下一步</a>
+        <a href="javascript:" class="saveBtn">保存</a>
+      </div>
+    </div>
+    <div class="proce">
+      <div class="proceDiv">
+        <div class="item">
+          <span>1</span>
+          <p>基本信息</p>
+        </div>
+        <div class="item">
+          <span>2</span>
+          <p>企业规模</p>
+        </div>
+        <div class="item">
+          <span>3</span>
+          <p>排口设施</p>
+        </div>
+        <div class="item">
+          <span>4</span>
+          <p>监督管理</p>
+        </div>
+        <div class="item">
+          <span>5</span>
+          <p>文件备案</p>
+        </div>
+      </div>
+      <div class="enterprisScale">
+        <div class="row">
+          <div class="col-2">
+            <span class="fl">餐桌数量</span>
+            <input type="text" placeholder="">
+            <span class="fl">个</span>
+          </div>
+          <div class="col-2">
+            <span class="fl">可容纳用餐人数</span>
+            <input type="text" placeholder="" class="w130">
+            <span class="fl">人</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <span class="fl">经营面积</span>
+            <input type="text" placeholder="">
+            <span class="fl">m³</span>
+          </div>
+          <div class="col-2">
+            <span class="fl">用水量</span>
+            <input type="text" placeholder="">
+            <span class="fl">吨/月</span>
+          </div>
+        </div>
+        <div class="row">
+          <span class="fl">厨房炉头</span>
+          <a href="javascript:" id="addBurnerBtn" class="fl">+ 添加炉头</a>
+        </div>
+        <div class="burnerList">
+          <div class="item">
+            <div>
+              <span>炉头类型</span>
+              <select title="">
+                <option value="">炒炉</option>
+                <option value="">炒炉</option>
+                <option value="">炒炉</option>
+                <option value="">炒炉</option>
+              </select>
+            </div>
+            <div>
+              <span>数量</span>
+              <input type="text" placeholder="" value="6">
+            </div>
+            <div>
+              <span>燃料</span>
+              <select title="">
+                <option value="">天然气</option>
+                <option value="">天然气</option>
+                <option value="">天然气</option>
+              </select>
+            </div>
+            <div>
+              <span>功率</span>
+              <input type="text" placeholder="" value="20000V">
+            </div>
+            <a href="javascript:" class="state"></a>
+          </div>
+          <div class="item">
+            <div>
+              <span>炉头类型</span>
+              <select title="">
+                <option value="">炒炉</option>
+                <option value="">炒炉</option>
+                <option value="">炒炉</option>
+                <option value="">炒炉</option>
+              </select>
+            </div>
+            <div>
+              <span>数量</span>
+              <input type="text" placeholder="" value="6">
+            </div>
+            <div>
+              <span>燃料</span>
+              <select title="">
+                <option value="">天然气</option>
+                <option value="">天然气</option>
+                <option value="">天然气</option>
+              </select>
+            </div>
+            <div>
+              <span>功率</span>
+              <input type="text" placeholder="" value="20000V">
+            </div>
+            <a href="javascript:" class="delete"></a>
+          </div>
+          <div class="item">
+            <div>
+              <span>炉头类型</span>
+              <select title="">
+                <option value="">炒炉</option>
+                <option value="">炒炉</option>
+                <option value="">炒炉</option>
+                <option value="">炒炉</option>
+              </select>
+            </div>
+            <div>
+              <span>数量</span>
+              <input type="text" placeholder="" value="6">
+            </div>
+            <div>
+              <span>燃料</span>
+              <select title="">
+                <option value="">天然气</option>
+                <option value="">天然气</option>
+                <option value="">天然气</option>
+              </select>
+            </div>
+            <div>
+              <span>功率</span>
+              <input type="text" placeholder="" value="20000V">
+            </div>
+            <a href="javascript:" class="delete"></a>
+          </div>
+          <div class="item">
+            <div>
+              <span>炉头类型</span>
+              <select title="">
+                <option value="">炒炉</option>
+                <option value="">炒炉</option>
+                <option value="">炒炉</option>
+                <option value="">炒炉</option>
+              </select>
+            </div>
+            <div>
+              <span>数量</span>
+              <input type="text" placeholder="" value="6">
+            </div>
+            <div>
+              <span>燃料</span>
+              <select title="">
+                <option value="">天然气</option>
+                <option value="">天然气</option>
+                <option value="">天然气</option>
+              </select>
+            </div>
+            <div>
+              <span>功率</span>
+              <input type="text" placeholder="" value="20000V">
+            </div>
+            <a href="javascript:" class="delete"></a>
+          </div>
+          <div class="item">
+            <div>
+              <span>炉头类型</span>
+              <select title="">
+                <option value="">炒炉</option>
+                <option value="">炒炉</option>
+                <option value="">炒炉</option>
+                <option value="">炒炉</option>
+              </select>
+            </div>
+            <div>
+              <span>数量</span>
+              <input type="text" placeholder="" value="6">
+            </div>
+            <div>
+              <span>燃料</span>
+              <select title="">
+                <option value="">天然气</option>
+                <option value="">天然气</option>
+                <option value="">天然气</option>
+              </select>
+            </div>
+            <div>
+              <span>功率</span>
+              <input type="text" placeholder="" value="20000V">
+            </div>
+            <a href="javascript:" class="delete"></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <span class="fl">企业规模</span>
+            <select title="" class="icon-drop">
+              <option value="">中型</option>
+              <option value="">大型</option>
+              <option value="">小型</option>
+            </select>
+          </div>
+          <div class="col-2">
+            <span class="fl">是否监控</span>
+            <label><input type="radio" name="monitoring" checked>是</label>
+            <label><input type="radio" name="monitoring">否</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <span class="fl">关注程度</span>
+            <input type="text" placeholder="" value="重点">
+          </div>
+        </div>
+      </div>
+      <div class="handleDiv">
+        <a href="javascript:" class="prevBtn">上一步</a>
+        <a href="javascript:" class="nextBtn">下一步</a>
+        <a href="javascript:" class="save">保存</a>
+      </div>
+    </div>
+    <div class="proce">
+      <div class="proceDiv">
+        <div class="item">
+          <span>1</span>
+          <p>基本信息</p>
+        </div>
+        <div class="item">
+          <span>2</span>
+          <p>企业规模</p>
+        </div>
+        <div class="item">
+          <span>3</span>
+          <p>排口设施</p>
+        </div>
+        <div class="item">
+          <span>4</span>
+          <p>监督管理</p>
+        </div>
+        <div class="item">
+          <span>5</span>
+          <p>文件备案</p>
+        </div>
+      </div>
+      <div class="outletFacility">
+        <div class="tabsOption">
+          <a href="javascript:" class="optItem active">烟道排口001</a>
+          <a href="javascript:" class="optItem">烟道排口002</a>
+          <a href="javascript:">+ 添加排口</a>
+        </div>
+        <div class="tabsContainer">
+          <div class="tabsDiv">
+            <div class="row">
+              <div class="col-2">
+                <span class="fl">排口类型</span>
+                <input type="text" placeholder="">
+              </div>
+              <div class="col-2">
+                <span class="fl">排口编号</span>
+                <input type="text" placeholder="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2">
+                <span class="fl">排口名称</span>
+                <input type="text" placeholder="">
+              </div>
+              <div class="col-2">
+                <span class="fl">原始编号</span>
+                <input type="text" placeholder="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2">
+                <span class="fl">排口位置</span>
+                <input type="text" placeholder="">
+              </div>
+              <div class="col-2">
+                <span class="fl">排放去向</span>
+                <select title="">
+                  <option value="">1</option>
+                  <option value="">22</option>
+                  <option value="">333</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2">
+                <span class="fl">处理方式</span>
+                <select title="">
+                  <option value="">1</option>
+                  <option value="">22</option>
+                  <option value="">333</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <span class="fl">&nbsp;</span>
+              <a href="javascript:" id="div1-addMonitorPoint">+ 添加监测点</a>
+            </div>
+            <div class="row">
+              <span class="fl">监测点编号</span>
+              <input type="text" placeholder="">
+              <a href="javascript:" class="fl">检测</a>
+              <a href="javascript:" class="delete fl"></a>
+            </div>
+            <div class="row">
+              <span class="fl">监测点编号</span>
+              <input type="text" placeholder="">
+              <a href="javascript:" class="fl">检测</a>
+              <a href="javascript:" class="delete fl"></a>
+            </div>
+          </div>
+          <div class="tabsDiv">
+            <div class="row">
+              <div class="col-2">
+                <span class="fl">排口类型2</span>
+                <input type="text" placeholder="">
+              </div>
+              <div class="col-2">
+                <span class="fl">排口编号</span>
+                <input type="text" placeholder="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2">
+                <span class="fl">排口名称</span>
+                <input type="text" placeholder="">
+              </div>
+              <div class="col-2">
+                <span class="fl">原始编号</span>
+                <input type="text" placeholder="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2">
+                <span class="fl">排口位置</span>
+                <input type="text" placeholder="">
+              </div>
+              <div class="col-2">
+                <span class="fl">排放去向</span>
+                <select title="">
+                  <option value="">1</option>
+                  <option value="">22</option>
+                  <option value="">333</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2">
+                <span class="fl">处理方式</span>
+                <select title="">
+                  <option value="">1</option>
+                  <option value="">22</option>
+                  <option value="">333</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <span class="fl">&nbsp;</span>
+              <a href="javascript:" id="div2-addMonitorPoint">+ 添加监测点</a>
+            </div>
+            <div class="row">
+              <span class="fl">监测点编号</span>
+              <input type="text" placeholder="">
+              <a href="javascript:" class="fl">检测</a>
+              <a href="javascript:" class="delete fl"></a>
+            </div>
+            <div class="row">
+              <span class="fl">监测点编号</span>
+              <input type="text" placeholder="">
+              <a href="javascript:" class="fl">检测</a>
+              <a href="javascript:" class="delete fl"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="handleDiv">
+        <a href="javascript:" class="prevBtn">上一步</a>
+        <a href="javascript:" class="nextBtn">下一步</a>
+        <a href="javascript:" class="save">保存</a>
+      </div>
+    </div>
+    <div class="proce">
+      <div class="proceDiv">
+        <div class="item">
+          <span>1</span>
+          <p>基本信息</p>
+        </div>
+        <div class="item">
+          <span>2</span>
+          <p>企业规模</p>
+        </div>
+        <div class="item">
+          <span>3</span>
+          <p>排口设施</p>
+        </div>
+        <div class="item">
+          <span>4</span>
+          <p>监督管理</p>
+        </div>
+        <div class="item">
+          <span>5</span>
+          <p>文件备案</p>
+        </div>
+      </div>
+      <div class="supervise">
+        <div class="row">
+          <a href="javascript:" class="addPhone">+ 添加电话</a>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <span class="fl">单位名称</span>
+            <input type="text" placeholder="">
+          </div>
+          <div class="col-2">
+            <span class="fl">联系电话</span>
+            <input type="text" placeholder="">
+          </div>
+          <a href="javascript:" class="affirm"></a>
+        </div>
+        <div class="phoneList">
+          <div class="line">
+            <span class="fl">深圳市环保局</span>
+            <span>13112341234</span>
+            <a href="javascript:" class="delete"></a>
+          </div>
+          <div class="line">
+            <span class="fl">深圳市环保局</span>
+            <span>13112341234</span>
+            <a href="javascript:" class="delete"></a>
+          </div>
+          <div class="line">
+            <span class="fl">深圳市环保局</span>
+            <span>13112341234</span>
+            <a href="javascript:" class="delete"></a>
+          </div>
+          <div class="line">
+            <span class="fl">深圳市环保局</span>
+            <span>13112341234</span>
+            <a href="javascript:" class="delete"></a>
+          </div>
+          <div class="line">
+            <span class="fl">深圳市环保局</span>
+            <span>13112341234</span>
+            <a href="javascript:" class="delete"></a>
+          </div>
+          <div class="line">
+            <span class="fl">深圳市环保局</span>
+            <span>13112341234</span>
+            <a href="javascript:" class="delete"></a>
+          </div>
+          <div class="line">
+            <span class="fl">深圳市环保局</span>
+            <span>13112341234</span>
+            <a href="javascript:" class="delete"></a>
+          </div>
+          <div class="line">
+            <span class="fl">深圳市环保局</span>
+            <span>13112341234</span>
+            <a href="javascript:" class="delete"></a>
+          </div>
+          <div class="line">
+            <span class="fl">深圳市环保局</span>
+            <span>13112341234</span>
+            <a href="javascript:" class="delete"></a>
+          </div>
+          <div class="line">
+            <span class="fl">深圳市环保局</span>
+            <span>13112341234</span>
+            <a href="javascript:" class="delete"></a>
+          </div>
+          <div class="line">
+            <span class="fl">深圳市环保局</span>
+            <span>13112341234</span>
+            <a href="javascript:" class="delete"></a>
+          </div>
+          <div class="line">
+            <span class="fl">深圳市环保局</span>
+            <span>13112341234</span>
+            <a href="javascript:" class="delete"></a>
+          </div>
+          <div class="line">
+            <span class="fl">深圳市环保局</span>
+            <span>13112341234</span>
+            <a href="javascript:" class="delete"></a>
+          </div>
+          <div class="line">
+            <span class="fl">深圳市环保局</span>
+            <span>13112341234</span>
+            <a href="javascript:" class="delete"></a>
+          </div>
+        </div>
+      </div>
+      <div class="handleDiv">
+        <a href="javascript:" class="prevBtn">上一步</a>
+        <a href="javascript:" class="nextBtn">下一步</a>
+        <a href="javascript:" class="save">保存</a>
+      </div>
+    </div>
+    <div class="proce">
+      <div class="proceDiv">
+        <div class="item">
+          <span>1</span>
+          <p>基本信息</p>
+        </div>
+        <div class="item">
+          <span>2</span>
+          <p>企业规模</p>
+        </div>
+        <div class="item">
+          <span>3</span>
+          <p>排口设施</p>
+        </div>
+        <div class="item">
+          <span>4</span>
+          <p>监督管理</p>
+        </div>
+        <div class="item">
+          <span>5</span>
+          <p>文件备案</p>
+        </div>
+      </div>
+      <div class="documentFiling">
+        <div class="line">
+          <span class="fl">环保审批</span>
+          <input type="text" placeholder="" value="环保审批.jpg">
+          <a href="javascript:" class="delete fl"></a>
+          <a href="javascript:" class="upload">+上传文件</a>
+        </div>
+        <div class="line">
+          <span class="fl">环保审批</span>
+          <input type="text" placeholder="" value="环保审批.jpg">
+          <a href="javascript:" class="delete fl"></a>
+          <a href="javascript:" class="upload">+上传文件</a>
+        </div>
+        <div class="line">
+          <span class="fl">环保审批</span>
+          <input type="text" placeholder="" value="环保审批.jpg">
+          <a href="javascript:" class="delete fl"></a>
+          <a href="javascript:" class="upload">+上传文件</a>
+        </div>
+        <div class="line">
+          <span class="fl">环保审批</span>
+          <input type="text" placeholder="" value="环保审批.jpg">
+          <a href="javascript:" class="delete fl"></a>
+          <a href="javascript:" class="upload">+上传文件</a>
+        </div>
+        <div class="line">
+          <span class="fl">环保审批</span>
+          <input type="text" placeholder="" value="环保审批.jpg">
+          <a href="javascript:" class="delete fl"></a>
+          <a href="javascript:" class="upload">+上传文件</a>
+        </div>
+        <div class="line">
+          <span class="fl">环保审批</span>
+          <input type="text" placeholder="" value="环保审批.jpg">
+          <a href="javascript:" class="delete fl"></a>
+          <a href="javascript:" class="upload">+上传文件</a>
+        </div>
+      </div>
+      <div class="handleDiv">
+        <a href="javascript:" class="prevBtn">上一步</a>
+        <a href="javascript:" class="nextBtn">下一步</a>
+        <a href="javascript:" class="save">保存</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/echarts.min.js"></script>
+<script>
+
+  var corpDistribute = echarts.init(document.getElementById('corpDistribute'));
+  var corpDistributeOption = {
+    tooltip: {
+      trigger: 'axis',
+      axisPointer: {
+        type: 'shadow'
+      }
+    },
+    grid: {
+      top: '4%',
+      left: 0,
+      right: '4%',
+      bottom: 0,
+      containLabel: true
+    },
+    xAxis: {
+      type: 'category',
+      splitLine: {
+        show: false,
+        lineStyle: {
+          color: ['#0087ED']
+        }
+      },
+      nameTextStyle: {
+        color: ['#59b2fb']
+      },
+      axisLine: {
+        lineStyle: {
+          color: '#0087ED',
+          width: 1
+        }
+      },
+      data: ['盐田', '盐田', '盐田', '盐田', '盐田', '盐田', '盐田', '盐田', '盐田', '盐田'],
+      axisLabel: {
+        interval: 0,
+        rotate: 45
+      }
+    },
+    yAxis: {
+      type: 'value',
+      splitLine: {
+        show: false,
+        lineStyle: {
+          color: ['#0087ED']
+        }
+      },
+      nameTextStyle: {
+        color: ['#59b2fb']
+      },
+      axisLine: {
+        lineStyle: {
+          color: '#0087ED',
+          width: 1
+        }
+      }
+    },
+    series: [
+      {
+        name: '大型',
+        type: 'bar',
+        stack: '总量',
+        barWidth: '15px',
+        data: [200, 250, 100, 250, 300, 300, 200, 150, 100, 200],
+        itemStyle: {
+          normal: {
+            color: '#80daff'
+          }
+
+        }
+      },
+      {
+        name: '中型',
+        type: 'bar',
+        stack: '总量',
+        barWidth: '15px',
+        data: [150, 150, 150, 150, 60, 150, 50, 150, 100, 80],
+        itemStyle: {
+          normal: {
+            color: '#00b0ff'
+          }
+        }
+      },
+      {
+        name: '小型',
+        type: 'bar',
+        stack: '总量',
+        barWidth: '15px',
+        data: [40, 40, 40, 40, 40, 40, 40, 40, 40, 40],
+        itemStyle: {
+          normal: {
+            color: '#1261dd'
+          }
+        }
+      }
+    ]
+  };
+  corpDistribute.setOption(corpDistributeOption);
+
+
+  var scaleScale = echarts.init(document.getElementById('scaleScale'));
+  var scaleScaleOption = {
+    color: ['#80daff', '#00b0ff', '#1261dd'],
+    tooltip: {
+      trigger: 'item',
+      formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    series: [
+      {
+        name: '占比',
+        type: 'pie',
+        radius: ['55%', '80%'],
+        avoidLabelOverlap: false,
+        label: {
+          normal: {
+            show: false,
+            position: 'center'
+          },
+          emphasis: {
+            show: true,
+            textStyle: {
+              fontSize: 16
+            }
+          }
+        },
+        labelLine: {
+          normal: {
+            show: false
+          }
+        },
+        data: [
+          {value: 248, name: '大型'},
+          {value: 335, name: '中型'},
+          {value: 335, name: '小型'}
+        ]
+      }
+    ]
+  };
+  scaleScale.setOption(scaleScaleOption);
+
+
+  var complete = echarts.init(document.getElementById('complete'));
+  var completeOption = {
+    color: ['#51acff', 'rgba(255,255,255,0', 'rgba(255,255,255,0'],
+    angleAxis: {},
+    radiusAxis: {
+      type: 'category',
+      data: ['环保手续完备', '排水许可完备', '处置设施完备'],
+      z: 10
+    },
+    polar: {},
+    series: [
+      {
+        type: 'bar',
+        data: [5, 5, 7],
+        coordinateSystem: 'polar',
+        name: 'A',
+        stack: 'a',
+        barWidth: '10px'
+      },
+      {
+        type: 'bar',
+        data: [0, 5, 5],
+        coordinateSystem: 'polar',
+        name: 'B',
+        stack: 'a',
+        barWidth: '10px'
+      },
+      {
+        type: 'bar',
+        data: [0, 0, 0],
+        coordinateSystem: 'polar',
+        name: 'C',
+        stack: 'a',
+        barWidth: '10px'
+      }]
+  };
+  complete.setOption(completeOption);
+
+
+  var wade = echarts.init(document.getElementById('wade'));
+  var wadeOption = {
+    color: ['#51acff', 'rgba(255,255,255,0', 'rgba(255,255,255,0'],
+    angleAxis: {},
+    radiusAxis: {
+      type: 'category',
+      data: ['环保手续完备', '排水许可完备', '处置设施完备'],
+      z: 10
+    },
+    polar: {},
+    series: [
+      {
+        type: 'bar',
+        data: [5, 5, 7],
+        coordinateSystem: 'polar',
+        name: 'A',
+        stack: 'a',
+        barWidth: '10px'
+      },
+      {
+        type: 'bar',
+        data: [0, 5, 5],
+        coordinateSystem: 'polar',
+        name: 'B',
+        stack: 'a',
+        barWidth: '10px'
+      },
+      {
+        type: 'bar',
+        data: [0, 0, 0],
+        coordinateSystem: 'polar',
+        name: 'C',
+        stack: 'a',
+        barWidth: '10px'
+      }]
+  };
+  wade.setOption(wadeOption);
+
+
+</script>
+<script>
+
+  $(function () {
+
+    // 新增企业弹窗
+    var addEnterprisBtn = $('#addEnterprisBtn');
+    var layer = $('#layer');
+    var addEnterpris = $('#addEnterpris');
+    var popupCloseBtn = $('.popup > .closeBtn');
+    addEnterprisBtn.on('click', function () {
+      layer.show();
+      addEnterpris.show();
+    });
+
+    popupCloseBtn.on('click', function () {
+      $(this).parent().hide();
+      layer.hide();
+    });
+
+    // 选项卡
+    function Tab(option, active, tabObj, siblingObj) {
+      var $bp = $(option);
+      $bp.click(function () {
+        $(this).addClass(active).siblings().removeClass(active);
+        var index = $bp.index(this);
+        $(tabObj).eq(index).show().siblings(siblingObj).hide();
+      });
+    }
+
+    // 新增企业 - 排口设施 选项卡
+    Tab(
+      '.outletFacility .tabsOption > .optItem',
+      'active',
+      '.outletFacility .tabsContainer > .tabsDiv',
+      '.tabsDiv'
+    );
+
+
+    // 新增企业弹窗 - 步骤切换
+    var switchProce = $('.switchProce');
+    var proceList = $('.switchProce .proce');
+    var prevBtn = proceList.find('.prevBtn');
+    var nextBtn = proceList.find('.nextBtn');
+    var currentProce = 1;
+    console.log(prevBtn);
+    console.log(nextBtn);
+    prevBtn.on('click', function () {
+      if (currentProce !== 1) {
+        currentProce -= 1;
+        $(this).parents('.proce').hide().prev().show();
+      }
+    });
+    nextBtn.on('click', function () {
+      if (currentProce !== 5) {
+        currentProce += 1;
+        $(this).parents('.proce').hide().next().show();
+      }
+    });
+
+
+  })
+
+</script>
+</body>
+</html>

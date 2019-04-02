@@ -1,0 +1,2094 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>态势分析</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/tsfx.css">
+</head>
+<body>
+<div class="bk">
+
+  <!--header-->
+  <div class="clf header">
+    <div class="head_1"><a href="index.html">餐饮业环保综合管理系统</a></div>
+    <div class="head_2"><img src="images/header_1.png" alt=""></div>
+    <div class="clf head_3">
+      <div class=" fl btn">
+        <a href="qyxx_list.html" class="btn1">企业管理</a>
+        <a href="log_alarm.html" class="btn2">报警管理</a>
+        <a href="tsfx-zlpj.html" class="btn3 current">统计分析</a>
+        <a href="#" class="btn4">监督管理</a>
+        <a href="#" class="btn5">运维管理</a>
+        <a href="#" class="btn6">系统管理</a>
+      </div>
+      <div class="clf fr right">
+
+        <div class="user"><a href="#"><img src="images/user.png" alt=""></a></div>
+
+        <div class="notice">
+          <a href="#"><img src="images/notice.png" alt=""></a>
+          <span>2</span>
+        </div>
+        <div class="email">
+          <a href="#"><img src="images/email.png" alt=""></a>
+          <span>3</span>
+        </div>
+
+        <div class="area"><a href="#">深圳市<i></i></a></div>
+
+        <div class="time">15:33:06</div>
+        <div class="year">2018年1月25日</div>
+      </div>
+    </div>
+    <div class="head_4"><img src="images/header_2.png" alt=""></div>
+  </div>
+
+  <!--左边按钮-->
+  <div class="left_btn">
+    <a href="tsfx-zlpj.html" class="current">质量评价</a>
+    <a href="tsfx-zldb.html">质量对比</a>
+    <a href="javascript:">质量考核</a>
+    <a href="tsfx-zlpm.html">质量排名</a>
+  </div>
+
+  <!-- 中间主体 -->
+  <div class="main-middle">
+    <div class="topBar clf">
+
+      <!-- 时间选择 -->
+      <div class="clf dateBar fl">
+        <a href="javascript:" class="active">近7天</a>
+        <a href="javascript:">近30天</a>
+        <a href="javascript:">近1年</a>
+      </div>
+      <div class="date"><span>2017/11/24至2017/11/24</span></div>
+
+      <!-- 标签切换 -->
+      <div class="mainDiv-tabOption fr">
+        <a href="javascript:" class="active">质量分析</a>
+        <a href="javascript:">质量趋势</a>
+        <a href="tsfx-zlpm.html">质量排名</a>
+      </div>
+    </div>
+
+    <!-- 中间主体 - 主要部分 -->
+    <div class="mainDiv">
+      <!-- 中间主体 - 质量分析 -->
+      <div class="mainDiv-item mainDiv-analyze">
+
+        <!-- 统计 -->
+        <div class="statistics clf">
+          <div id="controlRates" class="chartDiv"></div>
+          <div id="qualityGrade" class="chartDiv"></div>
+          <div id="exceedCause" class="chartDiv"></div>
+          <div id="exceedProportion" class="chartDiv"></div>
+        </div>
+
+        <!-- 历史数据 -->
+        <div class="historyData">
+          <div class="historyData-tabOption">
+            <a href="javascript:" class="active">油烟历史数据</a>
+            <a href="javascript:">废水历史数据</a>
+          </div>
+          <div class="historyData-item clf">
+            <div class="fl">
+              <div id="lampblackHistoryData" class="fl"></div>
+            </div>
+            <table class="fr" cellpadding="0" cellspacing="0">
+              <thead>
+              <tr>
+                <td>指标</td>
+                <td>平均值</td>
+                <td>最大值</td>
+                <td>最小值</td>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>油烟<br>
+                  <small>(mg/m³)</small>
+                </td>
+                <td>30</td>
+                <td>30</td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td>VOC<br>
+                  <small>(mg/m³)</small>
+                </td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td>颗粒物<br>
+                  <small>(mg/m³)</small>
+                </td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>运转率<br>
+                  <small>(%)</small>
+                </td>
+                <td>98</td>
+                <td>98</td>
+                <td>98</td>
+              </tr>
+              <tr>
+                <td>净化率<br>
+                  <small>(%)</small>
+                </td>
+                <td>97</td>
+                <td>97</td>
+                <td>97</td>
+              </tr>
+              <tr>
+                <td>清洁度</td>
+                <td>Ⅲ</td>
+                <td>Ⅲ</td>
+                <td>Ⅲ</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="historyData-item">
+            <div class="fl">
+              <div id="wasteWaterHistoryData" class="fl"></div>
+              <div class="charts fl">
+                <div id="monitor1"></div>
+                <div id="monitor2"></div>
+                <div id="monitor3"></div>
+              </div>
+            </div>
+
+            <table class="fr" cellpadding="0" cellspacing="0">
+              <thead>
+              <tr>
+                <td>指标</td>
+                <td>平均值</td>
+                <td>最大值</td>
+                <td>最小值</td>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>BOD<br>
+                  <small>(mg/L)</small>
+                </td>
+                <td>385</td>
+                <td>385</td>
+                <td>385</td>
+              </tr>
+              <tr>
+                <td>COD<br>
+                  <small>(mg/L)</small>
+                </td>
+                <td>1200</td>
+                <td>1200</td>
+                <td>1200</td>
+              </tr>
+              <tr>
+                <td>SS<br>
+                  <small>(mg/L)</small>
+                </td>
+                <td>300</td>
+                <td>300</td>
+                <td>300</td>
+              </tr>
+              <tr>
+                <td>动植物油<br>
+                  <small>(mg/L)</small>
+                </td>
+                <td>200</td>
+                <td>200</td>
+                <td>200</td>
+              </tr>
+              <tr>
+                <td>LAS<br>
+                  <small>(mg/L)</small>
+                </td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>NH3-N<br>
+                  <small>(mg/L)</small>
+                </td>
+                <td>20</td>
+                <td>20</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>PH</td>
+                <td>14</td>
+                <td>14</td>
+                <td>14</td>
+              </tr>
+              <tr>
+                <td>DO<br>
+                  <small>(mg/L)</small>
+                </td>
+                <td>20</td>
+                <td>20</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>电导率<br>
+                  <small>us/cm</small>
+                </td>
+                <td>80000</td>
+                <td>80000</td>
+                <td>80000</td>
+              </tr>
+              <tr>
+                <td>浊度<br>
+                  <small>(NTU)</small>
+                </td>
+                <td>3000</td>
+                <td>3000</td>
+                <td>3000</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- 中间主体 - 质量趋势 -->
+      <div class="mainDiv-item mainDiv-trend">
+
+        <div class="dataCompare">
+          <!-- 环比 -->
+          <div class="chain fl">
+            <p class="dataTit">环比</p>
+            <div class="data clf">
+              <table class="dataTable fl" cellspacing="0" cellpadding="0">
+                <tr>
+                  <th></th>
+                  <th>本月</th>
+                  <th>上月</th>
+                  <th>涨幅</th>
+                </tr>
+                <tr>
+                  <td>超标总次数</td>
+                  <td>6</td>
+                  <td>8</td>
+                  <td class="icon up">20%</td>
+                </tr>
+                <tr>
+                  <td>单次最大超标时长<br><small>(分钟)</small></td>
+                  <td>120</td>
+                  <td>360</td>
+                  <td class="icon up">30%</td>
+                </tr>
+                <tr>
+                  <td>累计超标时长<br><small>(分钟)</small></td>
+                  <td>500</td>
+                  <td>600</td>
+                  <td class="icon up">30%</td>
+                </tr>
+              </table>
+              <div id="linkRelative" class="dataChart fr"></div>
+            </div>
+          </div>
+
+          <!-- 同比 -->
+          <div class="yoy fr clf">
+            <p class="dataTit">同比</p>
+            <div class="data clf">
+              <table class="dataTable fl" cellspacing="0" cellpadding="0">
+                <tr>
+                  <th></th>
+                  <th>本月</th>
+                  <th>上月</th>
+                  <th>涨幅</th>
+                </tr>
+                <tr>
+                  <td>超标总次数</td>
+                  <td>6</td>
+                  <td>8</td>
+                  <td class="icon up">20%</td>
+                </tr>
+                <tr>
+                  <td>单次最大超标时长<br><small>(分钟)</small></td>
+                  <td>120</td>
+                  <td>360</td>
+                  <td class="icon up">30%</td>
+                </tr>
+                <tr>
+                  <td>累计超标时长<br><small>(分钟)</small></td>
+                  <td>500</td>
+                  <td>600</td>
+                  <td class="icon up">30%</td>
+                </tr>
+              </table>
+              <div id="onYearOnYear" class="dataChart fr"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="filtrate">
+          <a href="javascript:">油烟</a>
+          <a href="javascript:">VOC</a>
+          <a href="javascript:">颗粒物</a>
+          <a href="javascript:">BOD</a>
+          <a href="javascript:">COD</a>
+          <a href="javascript:">SS</a>
+          <a href="javascript:">动植物油</a>
+          <a href="javascript:">LAS</a>
+          <a href="javascript:">NH3-N</a>
+          <a href="javascript:">PH</a>
+          <a href="javascript:">DO</a>
+          <a href="javascript:">电导率</a>
+          <a href="javascript:">浊度</a>
+        </div>
+
+        <div class="dataCompare2">
+          <!-- 环比 -->
+          <div class="chain fl">
+            <table class="dataTable2" cellspacing="0" cellpadding="0">
+              <thead>
+              <tr>
+                <td></td>
+                <td>超标(次)</td>
+                <td>超标时长(小时)</td>
+                <td>平均超标倍数</td>
+                <td>最大超标倍数</td>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>本月</td>
+                <td>10</td>
+                <td>26</td>
+                <td>0.8</td>
+                <td>1.5</td>
+              </tr>
+              <tr>
+                <td>上月</td>
+                <td>10</td>
+                <td>26</td>
+                <td>0.8</td>
+                <td>1.5</td>
+              </tr>
+              <tr>
+                <td>涨幅</td>
+                <td><span class="up">20%</span></td>
+                <td><span class="up">20%</span></td>
+                <td><span class="up">20%</span></td>
+                <td><span class="up">20%</span></td>
+              </tr>
+              </tbody>
+            </table>
+            <div id="linkRelative2"></div>
+          </div>
+
+          <!-- 同比 -->
+          <div class="yoy fr clf">
+            <table class="dataTable2" cellspacing="0" cellpadding="0">
+              <thead>
+              <tr>
+                <td></td>
+                <td>超标(次)</td>
+                <td>超标时长(小时)</td>
+                <td>平均超标倍数</td>
+                <td>最大超标倍数</td>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>本月</td>
+                <td>10</td>
+                <td>26</td>
+                <td>0.8</td>
+                <td>1.5</td>
+              </tr>
+              <tr>
+                <td>上月</td>
+                <td>10</td>
+                <td>26</td>
+                <td>0.8</td>
+                <td>1.5</td>
+              </tr>
+              <tr>
+                <td>涨幅</td>
+                <td><span class="up">20%</span></td>
+                <td><span class="up">20%</span></td>
+                <td><span class="up">20%</span></td>
+                <td><span class="up">20%</span></td>
+              </tr>
+              </tbody>
+            </table>
+            <div id="onYearOnYear2"></div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <!-- 中间主体 - 质量排名 -->
+      <div class="mainDiv-item mainDiv-ranking">
+
+        <!-- 历史排名 -->
+        <div class="ranking">
+          <div class="chartTitle">历史排名</div>
+          <div class="rankingTab">
+            <a href="javascript:" class="active">正排</a>
+            <a href="javascript:">反排</a>
+          </div>
+          <div id="historyRank" class="chart"></div>
+        </div>
+
+        <!-- 排名列表-筛选 -->
+        <div class="rankingFiltra clf">
+          <a href="javascript:" class="active">实时排名</a><span>|</span>
+          <a href="javascript:">日排名</a><span>|</span>
+          <a href="javascript:">月排名</a>
+        </div>
+
+        <!-- 排名列表-表单 -->
+        <div class="rankingTable clf">
+          <table class="fl" cellpadding="0" cellspacing="0">
+            <thead>
+            <tr>
+              <td>排名<br>
+                <small>粤海街道</small>
+              </td>
+              <td>名称</td>
+              <td>油烟浓度<br>
+                <small>(mg/m³)</small>
+              </td>
+              <td>状态</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>1</td>
+              <td>江南乡</td>
+              <td>100</td>
+              <td><span class="status normal">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>木屋烧烤(南头店)</td>
+              <td>100</td>
+              <td><span class="status normal">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>木屋烧烤(南头店)</td>
+              <td>100</td>
+              <td><span class="status exceed">超标</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>江南乡</td>
+              <td>100</td>
+              <td><span class="status normal">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>木屋烧烤(南头店)</td>
+              <td>100</td>
+              <td><span class="status normal">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>木屋烧烤(南头店)</td>
+              <td>100</td>
+              <td><span class="status exceed">超标</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>江南乡</td>
+              <td>100</td>
+              <td><span class="status normal">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>江南乡</td>
+              <td>100</td>
+              <td><span class="status normal">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>江南乡</td>
+              <td>100</td>
+              <td><span class="status normal">正常</span></td>
+            </tr>
+            </tbody>
+          </table>
+          <table class="fr" cellpadding="0" cellspacing="0">
+            <thead>
+            <tr>
+              <td>排名<br>
+                <small>粤海街道</small>
+              </td>
+              <td>名称</td>
+              <td>油烟浓度<br>
+                <small>(mg/m³)</small>
+              </td>
+              <td>状态</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>1</td>
+              <td>江南乡</td>
+              <td>100</td>
+              <td><span class="status normal">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>木屋烧烤(南头店)</td>
+              <td>100</td>
+              <td><span class="status normal">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>木屋烧烤(南头店)</td>
+              <td>100</td>
+              <td><span class="status exceed">超标</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>江南乡</td>
+              <td>100</td>
+              <td><span class="status normal">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>木屋烧烤(南头店)</td>
+              <td>100</td>
+              <td><span class="status normal">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>木屋烧烤(南头店)</td>
+              <td>100</td>
+              <td><span class="status exceed">超标</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>江南乡</td>
+              <td>100</td>
+              <td><span class="status normal">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>江南乡</td>
+              <td>100</td>
+              <td><span class="status normal">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>江南乡</td>
+              <td>100</td>
+              <td><span class="status normal">正常</span></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 右侧详情 -->
+  <div class="rightSidebar">
+
+    <!-- 搜索 -->
+    <div class="clf search">
+      <form action="" class="searchInp">
+        <input type="text" placeholder="请输入关键字">
+        <input type="button">
+      </form>
+    </div>
+
+    <!-- 右侧详情 - 列表 -->
+    <div class="detailList">
+      <div class="detailList-tab">
+        <a href="javascript:">区域列表</a>
+        <a href="javascript:" class="active">企业列表</a>
+      </div>
+      <div class="detailDiv">
+        <div class="detailDiv-div" style="display: none;">
+          <div class="areaList">
+            <dl>
+              <dt><a href="javascript:">福田区</a></dt>
+              <dd>
+                <a href="javascript:">园岭</a>
+                <a href="javascript:">南园</a>
+                <a href="javascript:">华富</a>
+                <a href="javascript:">莲花</a>
+                <a href="javascript:">福田</a>
+                <a href="javascript:">沙头</a>
+                <a href="javascript:">雪蜜湖</a>
+                <a href="javascript:">梅林</a>
+              </dd>
+            </dl>
+            <dl>
+              <dt><a href="javascript:">罗湖区</a></dt>
+              <dd>
+                <a href="javascript:">新安</a>
+                <a href="javascript:">西乡</a>
+                <a href="javascript:">石岩</a>
+                <a href="javascript:">航城</a>
+                <a href="javascript:">福永</a>
+                <a href="javascript:">福海</a>
+                <a href="javascript:">沙井</a>
+                <a href="javascript:">新桥</a>
+                <a href="javascript:">松岗</a>
+                <a href="javascript:">燕罗</a>
+                <a href="javascript:">燕罗</a>
+              </dd>
+            </dl>
+            <dl>
+              <dt><a href="javascript:">南山区</a></dt>
+              <dd>
+                <a href="javascript:">新安</a>
+                <a href="javascript:">西乡</a>
+                <a href="javascript:">石岩</a>
+                <a href="javascript:">航城</a>
+                <a href="javascript:">福永</a>
+                <a href="javascript:">福海</a>
+                <a href="javascript:">沙井</a>
+                <a href="javascript:">新桥</a>
+              </dd>
+            </dl>
+            <dl>
+              <dt><a href="javascript:">宝安区</a></dt>
+              <dd>
+                <a href="javascript:">新安</a>
+                <a href="javascript:">西乡</a>
+                <a href="javascript:">石岩</a>
+                <a href="javascript:">航城</a>
+                <a href="javascript:">福永</a>
+                <a href="javascript:">福海</a>
+                <a href="javascript:">沙井</a>
+                <a href="javascript:">新桥</a>
+                <a href="javascript:">松岗</a>
+                <a href="javascript:">燕罗</a>
+                <a href="javascript:">新桥</a>
+                <a href="javascript:">松岗</a>
+                <a href="javascript:">燕罗</a>
+              </dd>
+            </dl>
+            <dl>
+              <dt><a href="javascript:">龙岗区</a></dt>
+              <dd>
+                <a href="javascript:">新安</a>
+                <a href="javascript:">西乡</a>
+                <a href="javascript:">石岩</a>
+                <a href="javascript:">航城</a>
+                <a href="javascript:">福永</a>
+                <a href="javascript:">福海</a>
+                <a href="javascript:">沙井</a>
+                <a href="javascript:">新桥</a>
+              </dd>
+            </dl>
+            <dl>
+              <dt><a href="javascript:">龙华区</a></dt>
+              <dd>
+                <a href="javascript:">新安</a>
+                <a href="javascript:">西乡</a>
+                <a href="javascript:">石岩</a>
+                <a href="javascript:">航城</a>
+                <a href="javascript:">福永</a>
+                <a href="javascript:">福海</a>
+              </dd>
+            </dl>
+            <dl>
+              <dt><a href="javascript:">光明新区</a></dt>
+              <dd>
+                <a href="javascript:">新安</a>
+                <a href="javascript:">西乡</a>
+                <a href="javascript:">石岩</a>
+                <a href="javascript:">航城</a>
+                <a href="javascript:">福永</a>
+              </dd>
+            </dl>
+            <dl>
+              <dt><a href="javascript:">大鹏新区</a></dt>
+              <dd>
+                <a href="javascript:">新安</a>
+                <a href="javascript:">西乡</a>
+                <a href="javascript:">石岩</a>
+                <a href="javascript:">航城</a>
+                <a href="javascript:">福永</a>
+              </dd>
+            </dl>
+            <dl>
+              <dt><a href="javascript:">盐田区</a></dt>
+              <dd>
+                <a href="javascript:">盐田</a>
+                <a href="javascript:">梅沙</a>
+                <a href="javascript:">沙头角</a>
+                <a href="javascript:">海山</a>
+              </dd>
+            </dl>
+            <dl>
+              <dt><a href="javascript:">坪山新区</a></dt>
+              <dd>
+                <a href="javascript:">坪山</a>
+                <a href="javascript:">马峦</a>
+                <a href="javascript:">碧岭</a>
+                <a href="javascript:">石井</a>
+                <a href="javascript:">坑梓</a>
+                <a href="javascript:">龙田</a>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <div class="detailDiv-div">
+          <div class="filtrate">
+            <select title="addr">
+              <option value="">所有区域</option>
+              <option value="">北京</option>
+              <option value="">上海</option>
+              <option value="">广州</option>
+              <option value="">深圳</option>
+            </select>
+            <select title="scale">
+              <option value="">所有规模</option>
+              <option value="">规模1</option>
+              <option value="">规模2</option>
+              <option value="">规模3</option>
+            </select>
+            <select title="scale">
+              <option value="">超标</option>
+              <option value="">超标1</option>
+              <option value="">超标2</option>
+              <option value="">超标3</option>
+            </select>
+          </div>
+          <ul class="list">
+            <li>
+              <a href="javascript:">
+                <span>1</span>
+                <span>江南乡</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:">
+                <span>1</span>
+                <span>江南乡</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:">
+                <span>1</span>
+                <span>江南乡</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:">
+                <span>1</span>
+                <span>江南乡</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:">
+                <span>1</span>
+                <span>江南乡</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:">
+                <span>1</span>
+                <span>江南乡</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:">
+                <span>1</span>
+                <span>江南乡</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:">
+                <span>1</span>
+                <span>江南乡</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:">
+                <span>1</span>
+                <span>江南乡</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:">
+                <span>1</span>
+                <span>江南乡</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:">
+                <span>1</span>
+                <span>江南乡</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:">
+                <span>1</span>
+                <span>江南乡</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:">
+                <span>1</span>
+                <span>江南乡</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:">
+                <span>1</span>
+                <span>江南乡</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:">
+                <span>1</span>
+                <span>江南乡</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script>
+
+  $(function () {
+
+    // 选项卡切换
+    function Tab(option, active, tabObj, siblingObj) {
+      var $tab = $(option);
+      $tab.click(function () {
+        $(this).addClass(active).siblings().removeClass(active);
+        var index = $tab.index(this);
+        $(tabObj).eq(index).show().siblings(siblingObj).hide();
+      });
+    }
+
+    // 中间主体 - 标签切换 选项卡
+    Tab('.mainDiv-tabOption a', 'active', '.mainDiv>.mainDiv-item', 'div');
+
+    // 中间主体 - 历史数据 选项卡
+    Tab('.historyData-tabOption a', 'active', '.historyData>.historyData-item', '.historyData-item');
+
+    // 右侧详情 - 列表 选项卡
+    Tab('.detailList-tab a', 'active', '.detailDiv>.detailDiv-div', '.detailDiv-div');
+
+
+  })
+
+</script>
+<script src="js/echarts.min.js"></script>
+<script>
+
+  var controlRates = echarts.init(document.getElementById('controlRates'));
+  var controlRatesOption = {
+    title: {
+      text: '企业达标率',
+      textStyle: {
+        color: '#fff',
+        fontSize: 16
+      },
+      x: 'center',
+      top: 15
+    },
+    tooltip: {
+      trigger: 'item',
+      formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    series: [
+      {
+        name: '访问来源',
+        type: 'pie',
+        radius: ['37.5%', '50%'],
+        center: ['50%', '65%'],
+        avoidLabelOverlap: false,
+        label: {
+          normal: {
+            position: 'center'
+          },
+          emphasis: {
+            textStyle: {
+              fontSize: '30'
+            }
+          }
+        },
+        labelLine: {
+          normal: {
+            show: false
+          }
+        },
+        data: [
+          {value: 75, name: '75%'},
+          {value: 25, name: ''}
+        ]
+      }
+    ],
+    color: ['#a4cb5d', 'rgba(7,147,255,.15)']
+  };
+  controlRates.setOption(controlRatesOption);
+
+
+  var qualityGrade = echarts.init(document.getElementById('qualityGrade'));
+  var qualityGradeOption = {
+    color: ['#36cbcb', '#ef904a', '#f2637b', '#805ce8'],
+    title: {
+      text: '质量等级占比',
+      textStyle: {
+        color: '#fff',
+        fontSize: 16
+      },
+      x: 'center',
+      top: 15
+    },
+    tooltip: {
+      trigger: 'axis',
+      axisPointer: {
+        type: 'shadow'
+      }
+    },
+    legend: {
+      data: ['12:00', '12:30', '13:00', '13:30']
+    },
+    grid: {
+      top: '35%',
+      left: '5%',
+      right: '10%',
+      bottom: '10%',
+      containLabel: true
+    },
+    xAxis: {
+      type: 'value',
+      show: false,
+      nameTextStyle: {
+        color: ['#59b2fb']
+      },
+      splitLine: {
+        show: false,
+        lineStyle: {
+          color: ['#0087ED']
+        }
+      },
+      axisLine: {
+        lineStyle: {
+          color: '#0087ED',
+          width: 1
+        }
+      }
+
+    },
+    yAxis: {
+      type: 'category',
+      data: ['油烟', '废水'],
+      nameTextStyle: {
+        color: ['#59b2fb']
+      },
+      splitLine: {
+        show: false,
+        lineStyle: {
+          color: ['#0087ED']
+        }
+      },
+      axisLine: {
+        lineStyle: {
+          color: '#0087ED',
+          width: 1
+        }
+      }
+    },
+    series: [
+      {
+        name: '达标',
+        type: 'bar',
+        barWidth: '16px',
+        stack: '总量',
+        data: [320, 302]
+      },
+      {
+        name: '超标',
+        type: 'bar',
+        barWidth: '16px',
+        stack: '总量',
+        data: [120, 132]
+      },
+      {
+        name: '严重超标',
+        type: 'bar',
+        barWidth: '16px',
+        stack: '总量',
+        data: [120, 132]
+      },
+      {
+        name: '未检测',
+        type: 'bar',
+        barWidth: '16px',
+        stack: '总量',
+        data: [120, 132]
+      }
+    ]
+  };
+  qualityGrade.setOption(qualityGradeOption);
+
+
+  var exceedCause = echarts.init(document.getElementById('exceedCause'));
+  var exceedCauseOption = {
+    color: ['#7cc1ff', '#805ce8'],
+    title: {
+      text: '超标原因占比 水/气',
+      textStyle: {
+        color: '#fff',
+        fontSize: 16
+      },
+      x: 'center',
+      top: 15
+    },
+    tooltip: {
+      trigger: 'item',
+      formatter: "{a} <br/>{b} : {c} ({d}%)"
+    },
+    series: [
+      {
+        name: '超标原因占比 水/气',
+        type: 'pie',
+        radius: ['37.5%', '50%'],
+        center: ['50%', '65%'],
+        data: [
+          {value: 335, name: '油烟'},
+          {value: 310, name: '废水'}
+        ],
+        itemStyle: {
+          emphasis: {
+            shadowBlur: 10,
+            shadowOffsetX: 0,
+            shadowColor: 'rgba(0, 0, 0, 0.5)'
+          }
+        }
+      }
+    ]
+  };
+  exceedCause.setOption(exceedCauseOption);
+
+
+  var exceedProportion = echarts.init(document.getElementById('exceedProportion'));
+  var exceedProportionOption = {
+    color: [
+      '#3aa1ff',
+      '#88d1ea',
+      '#36cbcb',
+      '#82dfbe',
+      '#4ecb73',
+      '#acdf82',
+      '#acdf82',
+      '#fbd437',
+      '#eaa674',
+      '#f2637b',
+      '#dc81d2',
+      '#975fe5',
+      '#9f8bf0'
+    ],
+    title: {
+      text: '超标指标占比',
+      textStyle: {
+        color: '#fff',
+        fontSize: 16
+      },
+      x: 'center',
+      top: 20
+    },
+    tooltip: {
+      trigger: 'item',
+      formatter: "{a} <br/>{b} : {c} ({d}%)"
+    },
+    legend: {
+      type: 'scroll',
+      textStyle: {
+        color: '#59b3ff',
+        fontSize: '12px'
+      },
+      orient: 'vertical',
+      left: '3%',
+      top: '30%',
+      bottom: '5%',
+      data: ['VOC1', 'VOC2', 'VOC3', 'VOC4', 'VOC5', 'VOC6', 'VOC7', 'VOC8', 'VOC9', 'VOC10', 'VOC11', 'VOC12'],
+      pageIconColor: '#3aa1ff',
+      pageIconInactiveColor: 'rgba(58,161,255,.5)'
+    },
+    series: [
+      {
+        name: '半径模式',
+        type: 'pie',
+        radius: ['12%', '45%'],
+        center: ['65%', '65%'],
+        roseType: 'radius',
+        label: {
+          normal: {
+            show: false
+          },
+          emphasis: {
+            show: true
+          }
+        },
+        lableLine: {
+          normal: {
+            show: false
+          },
+          emphasis: {
+            show: true
+          }
+        },
+        data: [
+          {value: 19, name: 'VOC1'},
+          {value: 18, name: 'VOC2'},
+          {value: 22, name: 'VOC3'},
+          {value: 25, name: 'VOC4'},
+          {value: 27, name: 'VOC5'},
+          {value: 21, name: 'VOC6'},
+          {value: 26, name: 'VOC7'},
+          {value: 30, name: 'VOC8'},
+          {value: 33, name: 'VOC9'},
+          {value: 26, name: 'VOC10'},
+          {value: 27, name: 'VOC11'},
+          {value: 33, name: 'VOC12'}
+        ]
+      }
+    ]
+  };
+  exceedProportion.setOption(exceedProportionOption);
+
+
+  var lampblackHistoryData = echarts.init(document.getElementById('lampblackHistoryData'));
+  var lampblackHistoryDataOption = {
+    color: ['#00ffff', '#f48545', '#95d64e'],
+    tooltip: {
+      trigger: 'axis'
+    },
+    legend: {
+      data: [
+        {name: '油烟浓度', icon: 'rect'},
+        {name: 'VOC浓度', icon: 'rect'},
+        {name: '颗粒物浓度', icon: 'rect'}
+      ]
+      ,
+      textStyle: {
+        color: ['#58b1fb']
+      }
+    },
+    grid: {
+      left: '3%',
+      right: '4%',
+      bottom: '3%',
+      containLabel: true
+    },
+    xAxis: [
+      {
+        type: 'category',
+        boundaryGap: false,
+        data: ['4月1日', '4月2日', '4月3日', '4月4日', '4月5日', '4月6日', '4月7日', '4月1日', '4月2日', '4月3日', '4月4日', '4月5日', '4月6日', '4月7日'],
+        nameTextStyle: {
+          color: ['#59b2fb']
+        },
+        splitLine: {
+          show: false,
+          lineStyle: {
+            color: ['#0087ED']
+          }
+        },
+        axisLine: {
+          lineStyle: {
+            color: '#0087ED',
+            width: 1
+          }
+        },
+        interval: 0
+      }
+    ],
+    yAxis: [
+      {
+        type: 'value',
+        nameTextStyle: {
+          color: ['#59b2fb']
+        },
+        splitLine: {
+          show: false,
+          lineStyle: {
+            color: ['#0087ED']
+          }
+        },
+        axisLine: {
+          lineStyle: {
+            color: '#0087ED',
+            width: 1
+          }
+        }
+      }
+    ],
+    series: [
+      {
+        name: '油烟浓度',
+        type: 'line',
+        stack: '总量',
+        data: [120, 132, 101, 134, 90, 230, 210, 120, 132, 101, 134, 90, 230, 210]
+      },
+      {
+        name: 'VOC浓度',
+        type: 'line',
+        stack: '总量',
+        data: [220, 182, 191, 234, 290, 330, 310, 220, 182, 191, 234, 290, 330, 310]
+      },
+      {
+        name: '颗粒物浓度',
+        type: 'line',
+        stack: '总量',
+        data: [150, 232, 201, 154, 190, 330, 410, 150, 232, 201, 154, 190, 330, 410]
+      }
+    ]
+  };
+  lampblackHistoryData.setOption(lampblackHistoryDataOption);
+
+
+  var wasteWaterHistoryData = echarts.init(document.getElementById('wasteWaterHistoryData'));
+  var wasteWaterHistoryDataOption = {
+    color: ['#81cded', '#3fa4ff', '#9591f2', '#8e6ce9', '#c888d9', '#db6f8f'],
+    tooltip: {
+      trigger: 'axis'
+    },
+    legend: {
+      data: ['BOD', 'COD', 'SS', '动植物油', 'LAS', 'NH3-N'],
+      textStyle: {
+        color: ['#58b1fb']
+      }
+    },
+    grid: {
+      left: '2%',
+      right: '2%',
+      bottom: '3%',
+      containLabel: true
+    },
+    xAxis: [
+      {
+        type: 'category',
+        boundaryGap: false,
+        data: ['12:00', '12:30', '13:00', '13:30', '14:00', '14:30', '15:00', '15:30'],
+        nameTextStyle: {
+          color: ['#59b2fb']
+        },
+        splitLine: {
+          show: false,
+          lineStyle: {
+            color: ['#0087ED']
+          }
+        },
+        axisLine: {
+          lineStyle: {
+            color: '#0087ED',
+            width: 1
+          }
+        }
+      }
+    ],
+    yAxis: [
+      {
+        type: 'value',
+        nameTextStyle: {
+          color: ['#59b2fb']
+        },
+        splitLine: {
+          show: false,
+          lineStyle: {
+            color: ['#0087ED']
+          }
+        },
+        axisLine: {
+          lineStyle: {
+            color: '#0087ED',
+            width: 1
+          }
+        }
+      }
+    ],
+    series: [
+      {
+        name: 'BOD',
+        type: 'line',
+        stack: '总量',
+        data: [120, 132, 101, 134, 90, 230, 210, 220]
+      },
+      {
+        name: 'COD',
+        type: 'line',
+        stack: '总量',
+        data: [220, 182, 191, 234, 290, 330, 310, 280]
+      },
+      {
+        name: 'SS',
+        type: 'line',
+        stack: '总量',
+        data: [150, 232, 201, 154, 190, 330, 410, 390]
+      },
+      {
+        name: '动植物油',
+        type: 'line',
+        stack: '总量',
+        data: [150, 232, 201, 154, 190, 330, 410, 390]
+      },
+      {
+        name: 'LAS',
+        type: 'line',
+        stack: '总量',
+        data: [150, 232, 201, 154, 190, 330, 410, 390]
+      },
+      {
+        name: 'NH3-N',
+        type: 'line',
+        stack: '总量',
+        data: [150, 232, 201, 154, 190, 330, 410, 390]
+      }
+    ]
+  };
+  wasteWaterHistoryData.setOption(wasteWaterHistoryDataOption);
+
+
+  var monitor1 = echarts.init(document.getElementById('monitor1'));
+  var monitor1Option = {
+    color: ['#65e0e3', '#37a2da', '#d7c781'],
+    tooltip: {
+      trigger: 'axis'
+    },
+    legend: {
+      data: ['电导率', '溶解氧', '平均值'],
+      textStyle: {
+        color: ['#58b1fb']
+      }
+    },
+    grid: {
+      left: '3%',
+      right: '4%',
+      bottom: '3%',
+      containLabel: true
+    },
+    xAxis: [
+      {
+        type: 'category',
+        data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+        axisPointer: {
+          type: 'shadow'
+        },
+        show: false
+      }
+    ],
+    yAxis: [
+      {
+        type: 'value',
+        name: ' ',
+        min: 0,
+        max: 250,
+        interval: 50,
+        axisLabel: {
+          formatter: '{value}'
+        },
+        nameTextStyle: {
+          color: ['#59b2fb']
+        },
+        splitLine: {
+          show: false,
+          lineStyle: {
+            color: ['#0087ED']
+          }
+        },
+        axisLine: {
+          lineStyle: {
+            color: '#0087ED',
+            width: 1
+          }
+        }
+      },
+      {
+        type: 'value',
+        name: ' ',
+        min: 0,
+        max: 25,
+        interval: 5,
+        axisLabel: {
+          formatter: '{value}'
+        },
+        nameTextStyle: {
+          color: ['#59b2fb']
+        },
+        splitLine: {
+          show: false,
+          lineStyle: {
+            color: ['#0087ED']
+          }
+        },
+        axisLine: {
+          lineStyle: {
+            color: '#0087ED',
+            width: 1
+          }
+        }
+      }
+    ],
+    series: [
+      {
+        name: '电导率',
+        type: 'bar',
+        data: [2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3]
+      },
+      {
+        name: '溶解氧',
+        type: 'bar',
+        data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]
+      },
+      {
+        name: '平均值',
+        type: 'line',
+        yAxisIndex: 1,
+        data: [2.0, 2.2, 3.3, 4.5, 6.3, 10.2, 20.3, 23.4, 23.0, 16.5, 12.0, 6.2]
+      }
+    ]
+  };
+  monitor1.setOption(monitor1Option);
+
+
+  var monitor2 = echarts.init(document.getElementById('monitor2'));
+  var monitor2Option = {
+    color: ['#65e0e3', '#37a2da', '#d7c781'],
+    tooltip: {
+      trigger: 'axis'
+    },
+    legend: {
+      data: ['PH', '温度', '平均值'],
+      textStyle: {
+        color: ['#58b1fb']
+      }
+    },
+    grid: {
+      left: '3%',
+      right: '4%',
+      bottom: '3%',
+      containLabel: true
+    },
+    xAxis: [
+      {
+        type: 'category',
+        data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+        axisPointer: {
+          type: 'shadow'
+        },
+        show: false
+      }
+    ],
+    yAxis: [
+      {
+        type: 'value',
+        name: ' ',
+        min: 0,
+        max: 250,
+        interval: 50,
+        axisLabel: {
+          formatter: '{value}'
+        },
+        nameTextStyle: {
+          color: ['#59b2fb']
+        },
+        splitLine: {
+          show: false,
+          lineStyle: {
+            color: ['#0087ED']
+          }
+        },
+        axisLine: {
+          lineStyle: {
+            color: '#0087ED',
+            width: 1
+          }
+        }
+      },
+      {
+        type: 'value',
+        name: ' ',
+        min: 0,
+        max: 25,
+        interval: 5,
+        axisLabel: {
+          formatter: '{value}'
+        },
+        nameTextStyle: {
+          color: ['#59b2fb']
+        },
+        splitLine: {
+          show: false,
+          lineStyle: {
+            color: ['#0087ED']
+          }
+        },
+        axisLine: {
+          lineStyle: {
+            color: '#0087ED',
+            width: 1
+          }
+        }
+      }
+    ],
+    series: [
+      {
+        name: 'PH',
+        type: 'bar',
+        data: [2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3]
+      },
+      {
+        name: '温度',
+        type: 'bar',
+        data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]
+      },
+      {
+        name: '平均值',
+        type: 'line',
+        yAxisIndex: 1,
+        data: [2.0, 2.2, 3.3, 4.5, 6.3, 10.2, 20.3, 23.4, 23.0, 16.5, 12.0, 6.2]
+      }
+    ]
+  };
+  monitor2.setOption(monitor2Option);
+
+
+  var monitor3 = echarts.init(document.getElementById('monitor3'));
+  var monitor3Option = {
+    color: ['#65e0e3', '#37a2da', '#d7c781'],
+    tooltip: {
+      trigger: 'axis'
+    },
+    legend: {
+      data: ['浊度', '温度', '平均值'],
+      textStyle: {
+        color: ['#58b1fb']
+      }
+    },
+    grid: {
+      left: '3%',
+      right: '4%',
+      bottom: '3%',
+      containLabel: true
+    },
+    xAxis: [
+      {
+        type: 'category',
+        data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+        axisPointer: {
+          type: 'shadow'
+        },
+        show: false
+      }
+    ],
+    yAxis: [
+      {
+        type: 'value',
+        name: ' ',
+        min: 0,
+        max: 250,
+        interval: 50,
+        axisLabel: {
+          formatter: '{value}'
+        },
+        nameTextStyle: {
+          color: ['#59b2fb']
+        },
+        splitLine: {
+          show: false,
+          lineStyle: {
+            color: ['#0087ED']
+          }
+        },
+        axisLine: {
+          lineStyle: {
+            color: '#0087ED',
+            width: 1
+          }
+        }
+      },
+      {
+        type: 'value',
+        name: ' ',
+        min: 0,
+        max: 25,
+        interval: 5,
+        axisLabel: {
+          formatter: '{value}'
+        },
+        nameTextStyle: {
+          color: ['#59b2fb']
+        },
+        splitLine: {
+          show: false,
+          lineStyle: {
+            color: ['#0087ED']
+          }
+        },
+        axisLine: {
+          lineStyle: {
+            color: '#0087ED',
+            width: 1
+          }
+        }
+      }
+    ],
+    series: [
+      {
+        name: '浊度',
+        type: 'bar',
+        data: [2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3]
+      },
+      {
+        name: '温度',
+        type: 'bar',
+        data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]
+      },
+      {
+        name: '平均值',
+        type: 'line',
+        yAxisIndex: 1,
+        data: [2.0, 2.2, 3.3, 4.5, 6.3, 10.2, 20.3, 23.4, 23.0, 16.5, 12.0, 6.2]
+      }
+    ]
+  };
+  monitor3.setOption(monitor3Option);
+
+
+  var linkRelative = echarts.init(document.getElementById('linkRelative'));
+  var linkRelativeOption = {
+    color: ['#339ad8', '#5ed2e0', '#e7cd67', '#e79886', '#cb61b0'],
+    title: {
+      text: '超标指标占比',
+      textStyle: {
+        color: '#fff',
+        fontSize: 16
+      },
+      x: 'center',
+      top: 0
+    },
+    tooltip: {
+      trigger: 'item',
+      formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    series: [
+      {
+        name: '访问来源',
+        type: 'pie',
+        radius: ['5%', '35%'],
+        label: {
+          normal: {
+            show: false
+          }
+        },
+        data: [
+          {value: 20, name: '直达'},
+          {value: 33, name: '邮件营销'},
+          {value: 20, name: '联盟广告'},
+          {value: 20, name: '视频广告'},
+          {value: 93, name: '百度'}
+        ]
+      },
+      {
+        name: '访问来源',
+        type: 'pie',
+        radius: ['50%', '70%'],
+        label: {
+          normal: {
+            show: false
+          }
+        },
+        data: [
+          {value: 33, name: '直达'},
+          {value: 67, name: '邮件营销'},
+          {value: 33, name: '联盟广告'},
+          {value: 33, name: '视频广告'},
+          {value: 20, name: '百度'}
+        ]
+      }
+    ]
+  };
+  linkRelative.setOption(linkRelativeOption);
+
+
+  var onYearOnYear = echarts.init(document.getElementById('onYearOnYear'));
+  var onYearOnYearOption = {
+    color: ['#339ad8', '#5ed2e0', '#e7cd67', '#e79886', '#cb61b0'],
+    title: {
+      text: '超标指标占比',
+      textStyle: {
+        color: '#fff',
+        fontSize: 16
+      },
+      x: 'center',
+      top: 0
+    },
+    tooltip: {
+      trigger: 'item',
+      formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    series: [
+      {
+        name: '访问来源',
+        type: 'pie',
+        radius: ['5%', '35%'],
+        label: {
+          normal: {
+            show: false
+          }
+        },
+        data: [
+          {value: 20, name: '直达'},
+          {value: 33, name: '邮件营销'},
+          {value: 20, name: '联盟广告'},
+          {value: 20, name: '视频广告'},
+          {value: 93, name: '百度'}
+        ]
+      },
+      {
+        name: '访问来源',
+        type: 'pie',
+        radius: ['50%', '70%'],
+        label: {
+          normal: {
+            show: false
+          }
+        },
+        data: [
+          {value: 33, name: '直达'},
+          {value: 67, name: '邮件营销'},
+          {value: 33, name: '联盟广告'},
+          {value: 33, name: '视频广告'},
+          {value: 20, name: '百度'}
+        ]
+      }
+    ]
+  };
+  onYearOnYear.setOption(onYearOnYearOption);
+
+
+  var linkRelative2 = echarts.init(document.getElementById('linkRelative2'));
+  var linkRelative2Option = {
+    color: ['#4bbcdc', '#e79652'],
+    title: {
+      text: '达标天数环比上涨',
+      textStyle: {
+        color: '#fff',
+        fontSize: 14
+      },
+      x: 'center',
+      top: 10
+    },
+    tooltip: {
+      trigger: 'axis'
+    },
+    legend: {
+      data: [
+        {name: '本月', icon: 'rect'},
+        {name: '上月', icon: 'rect'}
+      ],
+      textStyle: {
+        color: ['#58b1fb']
+      },
+      top: '10%',
+      right: '2%'
+    },
+    grid: {
+      left: '3%',
+      right: '4%',
+      bottom: '3%',
+      containLabel: true
+    },
+    xAxis: [
+      {
+        type: 'category',
+        boundaryGap: false,
+        data: ['1日', '1日', '1日', '1日', '1日', '1日', '1日', '1日'],
+        nameTextStyle: {
+          color: ['#59b2fb']
+        },
+        splitLine: {
+          show: false,
+          lineStyle: {
+            color: ['#0087ED']
+          }
+        },
+        axisLine: {
+          lineStyle: {
+            color: '#0087ED',
+            width: 1
+          }
+        }
+      }
+    ],
+    yAxis: [
+      {
+        type: 'value',
+        nameTextStyle: {
+          color: ['#59b2fb']
+        },
+        splitLine: {
+          show: false,
+          lineStyle: {
+            color: ['#0087ED']
+          }
+        },
+        axisLine: {
+          lineStyle: {
+            color: '#0087ED',
+            width: 1
+          }
+        }
+      }
+    ],
+    series: [
+      {
+        name: '本月',
+        type: 'line',
+        stack: '总量',
+        data: [120, 132, 101, 134, 90, 230, 210, 220]
+      },
+      {
+        name: '上月',
+        type: 'line',
+        stack: '总量',
+        data: [220, 182, 191, 234, 290, 330, 310, 280]
+      }
+    ]
+  };
+  linkRelative2.setOption(linkRelative2Option);
+
+
+  var onYearOnYear2 = echarts.init(document.getElementById('onYearOnYear2'));
+  var onYearOnYear2Option = {
+    color: ['#4bbcdc', '#e79652'],
+    title: {
+      text: '达标天数环比上涨',
+      textStyle: {
+        color: '#fff',
+        fontSize: 14
+      },
+      x: 'center',
+      top: 10
+    },
+    tooltip: {
+      trigger: 'axis'
+    },
+    legend: {
+      data: [
+        {name: '本月', icon: 'rect'},
+        {name: '上月', icon: 'rect'}
+      ],
+      textStyle: {
+        color: ['#58b1fb']
+      },
+      top: '10%',
+      right: '2%'
+    },
+    grid: {
+      left: '3%',
+      right: '4%',
+      bottom: '3%',
+      containLabel: true
+    },
+    xAxis: [
+      {
+        type: 'category',
+        boundaryGap: false,
+        data: ['1日', '1日', '1日', '1日', '1日', '1日', '1日', '1日'],
+        nameTextStyle: {
+          color: ['#59b2fb']
+        },
+        splitLine: {
+          show: false,
+          lineStyle: {
+            color: ['#0087ED']
+          }
+        },
+        axisLine: {
+          lineStyle: {
+            color: '#0087ED',
+            width: 1
+          }
+        }
+      }
+    ],
+    yAxis: [
+      {
+        type: 'value',
+        nameTextStyle: {
+          color: ['#59b2fb']
+        },
+        splitLine: {
+          show: false,
+          lineStyle: {
+            color: ['#0087ED']
+          }
+        },
+        axisLine: {
+          lineStyle: {
+            color: '#0087ED',
+            width: 1
+          }
+        }
+      }
+    ],
+    series: [
+      {
+        name: '本月',
+        type: 'line',
+        stack: '总量',
+        data: [120, 132, 101, 134, 90, 230, 210, 220]
+      },
+      {
+        name: '上月',
+        type: 'line',
+        stack: '总量',
+        data: [220, 182, 191, 234, 290, 330, 310, 280]
+      }
+    ]
+  };
+  onYearOnYear2.setOption(onYearOnYear2Option);
+
+
+  var historyRank = echarts.init(document.getElementById('historyRank'));
+  var historyRankOption = {
+    color: ['#54cce2', '#339ad8'],
+    tooltip: {
+      trigger: 'axis'
+    },
+    legend: {
+      data: ['油烟', '废水'],
+      textStyle: {
+        color: ['#58b1fb']
+      },
+      bottom: 0
+    },
+    grid: {
+      left: '3%',
+      right: '4%',
+      bottom: '15%',
+      containLabel: true
+    },
+    xAxis: [
+      {
+        type: 'category',
+        data: ['9/30', '9/30', '9/30', '9/30', '9/30', '9/30', '9/30', '9/30', '9/30', '9/30', '9/30', '9/30'],
+        axisPointer: {
+          type: 'shadow'
+        },
+        nameTextStyle: {
+          color: ['#59b2fb']
+        },
+        splitLine: {
+          show: false,
+          lineStyle: {
+            color: ['#0087ED']
+          }
+        },
+        axisLine: {
+          lineStyle: {
+            color: '#0087ED',
+            width: 1
+          }
+        }
+      }
+    ],
+    yAxis: [
+      {
+        type: 'value',
+        name: ' ',
+        min: 0,
+        max: 250,
+        interval: 50,
+        axisLabel: {
+          formatter: '{value}'
+        },
+        nameTextStyle: {
+          color: ['#59b2fb']
+        },
+        splitLine: {
+          show: false,
+          lineStyle: {
+            color: ['#0087ED']
+          }
+        },
+        axisLine: {
+          lineStyle: {
+            color: '#0087ED',
+            width: 1
+          }
+        }
+      }
+    ],
+    series: [
+      {
+        name: '油烟',
+        type: 'bar',
+        barWidth: '15px',
+        data: [66, 55, 77, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 44, 33]
+      },
+      {
+        name: '废水',
+        type: 'bar',
+        barWidth: '15px',
+        data: [44, 55, 66, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 33, 66, 33]
+      }
+    ]
+  };
+  historyRank.setOption(historyRankOption);
+
+
+  $(function () {
+    var tabsOptionA = $('.mainDiv-tabOption > a');
+    tabsOptionA.on('click', function () {
+      setTimeout(function () {
+        controlRates.resize();
+        qualityGrade.resize();
+        exceedCause.resize();
+        exceedProportion.resize();
+        lampblackHistoryData.resize();
+        linkRelative.resize();
+        linkRelative2.resize();
+        onYearOnYear.resize();
+        historyRank.resize();
+      }, 1)
+    })
+
+  });
+
+
+  $(window).resize(function () {
+
+    controlRates.resize();
+    qualityGrade.resize();
+    exceedCause.resize();
+    exceedProportion.resize();
+    lampblackHistoryData.resize();
+    linkRelative.resize();
+    linkRelative2.resize();
+    onYearOnYear.resize();
+    historyRank.resize();
+  })
+
+
+</script>
+</body>
+</html>

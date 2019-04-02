@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>态势分析</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/tsfx_zlpm.css">
+</head>
+<body>
+<div class="bk">
+  <!--header-->
+  <div class="clf header">
+    <div class="head_1"><a href="index.html">餐饮业环保综合管理系统</a></div>
+    <div class="head_2"><img src="images/header_1.png" alt=""></div>
+    <div class="clf head_3">
+      <div class=" fl btn">
+        <a href="qyxx_list.html" class="btn1">企业管理</a>
+        <a href="log_alarm.html" class="btn2">报警管理</a>
+        <a href="tsfx-zlpj.html" class="btn3 current">统计分析</a>
+        <a href="#" class="btn4">监督管理</a>
+        <a href="#" class="btn5">运维管理</a>
+        <a href="#" class="btn6">系统管理</a>
+      </div>
+      <div class="clf fr right">
+
+        <div class="user"><a href="#"><img src="images/user.png" alt=""></a></div>
+
+        <div class="notice">
+          <a href="#"><img src="images/notice.png" alt=""></a>
+          <span>2</span>
+        </div>
+        <div class="email">
+          <a href="#"><img src="images/email.png" alt=""></a>
+          <span>3</span>
+        </div>
+
+        <div class="area"><a href="#">深圳市<i></i></a></div>
+
+        <div class="time">15:33:06</div>
+        <div class="year">2018年1月25日</div>
+      </div>
+    </div>
+    <div class="head_4"><img src="images/header_2.png" alt=""></div>
+  </div>
+
+  <!--搜索-->
+  <div class="clf search">
+    <form action="" class="searchInp">
+      <input type="text" placeholder="请输入关键字">
+      <input type="button">
+    </form>
+  </div>
+
+  <!--左边按钮-->
+  <div class="left_btn">
+    <a href="tsfx-zlpj.html">质量评价</a>
+    <a href="tsfx-zldb.html">质量对比</a>
+    <a href="javascript:">质量考核</a>
+    <a href="tsfx-zlpm.html" class="current">质量排名</a>
+  </div>
+
+  <div class="box">
+    <!-- 时间选择 -->
+    <div class="clf dateBar fl">
+      <div class="filtrate clf">
+        <a href="javascript:" class="current">实时</a>
+        <a href="javascript:">日</a>
+        <a href="javascript:">月</a>
+      </div>
+      <div class="date"><span>2017/11/24至2017/11/24</span></div>
+    </div>
+
+    <!-- 监测报警 & 设备报警 -->
+    <div class="alarmTab">
+      <a href="javascript:" class="active">按企业</a>
+      <a href="javascript:">按区域</a>
+      <a href="javascript:">按街道</a>
+    </div>
+    <div class="alarmType">
+      <div class="typeDiv">
+        <div class="table">
+          <table>
+            <tr>
+              <th>排名</th>
+              <th>趋势</th>
+              <th>企业名称</th>
+              <th>区/县</th>
+              <th>街道/乡镇</th>
+              <th>VOC</th>
+              <th>涨幅</th>
+              <th>状态</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><span class="up">2</span></td>
+              <td>江南香餐饮有限公司</td>
+              <td>福田区</td>
+              <td>莲花街道</td>
+              <td>100</td>
+              <td>-20%</td>
+              <td><span class="alarmLevel_1">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><span class="up">2</span></td>
+              <td>江南香餐饮有限公司</td>
+              <td>福田区</td>
+              <td>莲花街道</td>
+              <td>100</td>
+              <td>-20%</td>
+              <td><span class="alarmLevel_2">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><span class="up">2</span></td>
+              <td>江南香餐饮有限公司</td>
+              <td>福田区</td>
+              <td>莲花街道</td>
+              <td>100</td>
+              <td>-20%</td>
+              <td><span class="alarmLevel_3">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><span class="up">2</span></td>
+              <td>江南香餐饮有限公司</td>
+              <td>福田区</td>
+              <td>莲花街道</td>
+              <td>100</td>
+              <td>-20%</td>
+              <td><span class="alarmLevel_4">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><span class="up">2</span></td>
+              <td>江南香餐饮有限公司</td>
+              <td>福田区</td>
+              <td>莲花街道</td>
+              <td>100</td>
+              <td>-20%</td>
+              <td><span class="alarmLevel_1">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><span class="up">2</span></td>
+              <td>江南香餐饮有限公司</td>
+              <td>福田区</td>
+              <td>莲花街道</td>
+              <td>100</td>
+              <td>-20%</td>
+              <td><span class="alarmLevel_2">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><span class="up">2</span></td>
+              <td>江南香餐饮有限公司</td>
+              <td>福田区</td>
+              <td>莲花街道</td>
+              <td>100</td>
+              <td>-20%</td>
+              <td><span class="alarmLevel_3">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><span class="up">2</span></td>
+              <td>江南香餐饮有限公司</td>
+              <td>福田区</td>
+              <td>莲花街道</td>
+              <td>100</td>
+              <td>-20%</td>
+              <td><span class="alarmLevel_4">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><span class="up">2</span></td>
+              <td>江南香餐饮有限公司</td>
+              <td>福田区</td>
+              <td>莲花街道</td>
+              <td>100</td>
+              <td>-20%</td>
+              <td><span class="alarmLevel_3">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><span class="up">2</span></td>
+              <td>江南香餐饮有限公司</td>
+              <td>福田区</td>
+              <td>莲花街道</td>
+              <td>100</td>
+              <td>-20%</td>
+              <td><span class="alarmLevel_4">正常</span></td>
+            </tr>
+          </table>
+        </div>
+        <div class="clf page">
+          <span class="sp1">共 <i>1000</i> 条</span>
+          <a href="javascript:">&lt;</a>
+          <a href="javascript:">1</a>
+          <a href="javascript:">2</a>
+          <a href="javascript:">3</a>
+          <a href="javascript:">4</a>
+          <span>...</span>
+          <a href="javascript:">10</a>
+          <a href="javascript:">&gt;</a>
+          <span class="sp2">前往 <input type="text" title="" value="3"> 页</span>
+        </div>
+      </div>
+      <div class="typeDiv">
+        <div class="table">
+          <table>
+            <tr>
+              <th>排名</th>
+              <th>趋势</th>
+              <th>区/县</th>
+              <th>VOC</th>
+              <th>涨幅</th>
+              <th>状态</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><span class="up">2</span></td>
+              <td>福田区</td>
+              <td>100</td>
+              <td>-20%</td>
+              <td><span class="alarmLevel_1">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><span class="up">2</span></td>
+              <td>福田区</td>
+              <td>100</td>
+              <td>-20%</td>
+              <td><span class="alarmLevel_2">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><span class="up">2</span></td>
+              <td>福田区</td>
+              <td>100</td>
+              <td>-20%</td>
+              <td><span class="alarmLevel_3">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><span class="up">2</span></td>
+              <td>福田区</td>
+              <td>100</td>
+              <td>-20%</td>
+              <td><span class="alarmLevel_4">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><span class="up">2</span></td>
+              <td>福田区</td>
+              <td>100</td>
+              <td>-20%</td>
+              <td><span class="alarmLevel_1">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><span class="up">2</span></td>
+              <td>福田区</td>
+              <td>100</td>
+              <td>-20%</td>
+              <td><span class="alarmLevel_2">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><span class="up">2</span></td>
+              <td>福田区</td>
+              <td>100</td>
+              <td>-20%</td>
+              <td><span class="alarmLevel_3">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><span class="up">2</span></td>
+              <td>福田区</td>
+              <td>100</td>
+              <td>-20%</td>
+              <td><span class="alarmLevel_4">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><span class="up">2</span></td>
+              <td>福田区</td>
+              <td>100</td>
+              <td>-20%</td>
+              <td><span class="alarmLevel_3">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><span class="up">2</span></td>
+              <td>福田区</td>
+              <td>100</td>
+              <td>-20%</td>
+              <td><span class="alarmLevel_4">正常</span></td>
+            </tr>
+          </table>
+        </div>
+        <div class="clf page">
+          <span class="sp1">共 <i>1000</i> 条</span>
+          <a href="javascript:">&lt;</a>
+          <a href="javascript:">1</a>
+          <a href="javascript:">2</a>
+          <a href="javascript:">3</a>
+          <a href="javascript:">4</a>
+          <span>...</span>
+          <a href="javascript:">10</a>
+          <a href="javascript:">&gt;</a>
+          <span class="sp2">前往 <input type="text" title="" value="3"> 页</span>
+        </div>
+      </div>
+      <div class="typeDiv">
+        <div class="table">
+          <table>
+            <tr>
+              <th>排名</th>
+              <th>趋势</th>
+              <th>区/县</th>
+              <th>街道/乡镇</th>
+              <th>VOC</th>
+              <th>涨幅</th>
+              <th>状态</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><span class="up">2</span></td>
+              <td>福田区</td>
+              <td>莲花街道</td>
+              <td>100</td>
+              <td>-20%</td>
+              <td><span class="alarmLevel_1">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><span class="up">2</span></td>
+              <td>福田区</td>
+              <td>莲花街道</td>
+              <td>100</td>
+              <td>-20%</td>
+              <td><span class="alarmLevel_2">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><span class="up">2</span></td>
+              <td>福田区</td>
+              <td>莲花街道</td>
+              <td>100</td>
+              <td>-20%</td>
+              <td><span class="alarmLevel_3">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><span class="up">2</span></td>
+              <td>福田区</td>
+              <td>莲花街道</td>
+              <td>100</td>
+              <td>-20%</td>
+              <td><span class="alarmLevel_4">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><span class="up">2</span></td>
+              <td>福田区</td>
+              <td>莲花街道</td>
+              <td>100</td>
+              <td>-20%</td>
+              <td><span class="alarmLevel_1">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><span class="up">2</span></td>
+              <td>福田区</td>
+              <td>莲花街道</td>
+              <td>100</td>
+              <td>-20%</td>
+              <td><span class="alarmLevel_2">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><span class="up">2</span></td>
+              <td>福田区</td>
+              <td>莲花街道</td>
+              <td>100</td>
+              <td>-20%</td>
+              <td><span class="alarmLevel_3">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><span class="up">2</span></td>
+              <td>福田区</td>
+              <td>莲花街道</td>
+              <td>100</td>
+              <td>-20%</td>
+              <td><span class="alarmLevel_4">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><span class="up">2</span></td>
+              <td>福田区</td>
+              <td>莲花街道</td>
+              <td>100</td>
+              <td>-20%</td>
+              <td><span class="alarmLevel_3">正常</span></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><span class="up">2</span></td>
+              <td>福田区</td>
+              <td>莲花街道</td>
+              <td>100</td>
+              <td>-20%</td>
+              <td><span class="alarmLevel_4">正常</span></td>
+            </tr>
+          </table>
+        </div>
+        <div class="clf page">
+          <span class="sp1">共 <i>1000</i> 条</span>
+          <a href="javascript:">&lt;</a>
+          <a href="javascript:">1</a>
+          <a href="javascript:">2</a>
+          <a href="javascript:">3</a>
+          <a href="javascript:">4</a>
+          <span>...</span>
+          <a href="javascript:">10</a>
+          <a href="javascript:">&gt;</a>
+          <span class="sp2">前往 <input type="text" title="" value="3"> 页</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/echarts.min.js"></script>
+<script>
+
+  var corpDistribute = echarts.init(document.getElementById('corpDistribute'));
+  var corpDistributeOption = {
+    tooltip: {
+      trigger: 'axis',
+      axisPointer: {
+        type: 'shadow'
+      }
+    },
+    grid: {
+      top: '4%',
+      left: 0,
+      right: '4%',
+      bottom: 0,
+      containLabel: true
+    },
+    xAxis: {
+      type: 'category',
+      splitLine: {
+        show: false,
+        lineStyle: {
+          color: ['#0087ED']
+        }
+      },
+      nameTextStyle: {
+        color: ['#59b2fb']
+      },
+      axisLine: {
+        lineStyle: {
+          color: '#0087ED',
+          width: 1
+        }
+      },
+      data: ['盐田', '盐田', '盐田', '盐田', '盐田', '盐田', '盐田', '盐田', '盐田', '盐田'],
+      axisLabel: {
+        interval: 0,
+        rotate: 45
+      }
+    },
+    yAxis: {
+      type: 'value',
+      splitLine: {
+        show: false,
+        lineStyle: {
+          color: ['#0087ED']
+        }
+      },
+      nameTextStyle: {
+        color: ['#59b2fb']
+      },
+      axisLine: {
+        lineStyle: {
+          color: '#0087ED',
+          width: 1
+        }
+      }
+    },
+    series: [
+      {
+        name: '大型',
+        type: 'bar',
+        stack: '总量',
+        barWidth: '15px',
+        data: [200, 250, 100, 250, 300, 300, 200, 150, 100, 200],
+        itemStyle: {
+          normal: {
+            color: '#80daff'
+          }
+
+        }
+      },
+      {
+        name: '中型',
+        type: 'bar',
+        stack: '总量',
+        barWidth: '15px',
+        data: [150, 150, 150, 150, 60, 150, 50, 150, 100, 80],
+        itemStyle: {
+          normal: {
+            color: '#00b0ff'
+          }
+        }
+      },
+      {
+        name: '小型',
+        type: 'bar',
+        stack: '总量',
+        barWidth: '15px',
+        data: [40, 40, 40, 40, 40, 40, 40, 40, 40, 40],
+        itemStyle: {
+          normal: {
+            color: '#1261dd'
+          }
+        }
+      }
+    ]
+  };
+  corpDistribute.setOption(corpDistributeOption);
+
+
+  var scaleScale = echarts.init(document.getElementById('scaleScale'));
+  var scaleScaleOption = {
+    color: ['#80daff', '#00b0ff', '#1261dd'],
+    tooltip: {
+      trigger: 'item',
+      formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    series: [
+      {
+        name: '占比',
+        type: 'pie',
+        radius: ['55%', '80%'],
+        avoidLabelOverlap: false,
+        label: {
+          normal: {
+            show: false,
+            position: 'center'
+          },
+          emphasis: {
+            show: true,
+            textStyle: {
+              fontSize: 16
+            }
+          }
+        },
+        labelLine: {
+          normal: {
+            show: false
+          }
+        },
+        data: [
+          {value: 248, name: '大型'},
+          {value: 335, name: '中型'},
+          {value: 335, name: '小型'}
+        ]
+      }
+    ]
+  };
+  scaleScale.setOption(scaleScaleOption);
+
+
+  var complete = echarts.init(document.getElementById('complete'));
+  var completeOption = {
+    color: ['#80daff', '#00b0ff', '#1261dd'],
+    tooltip: {
+      trigger: 'item',
+      formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    series: [
+      {
+        name: '占比',
+        type: 'pie',
+        radius: ['55%', '80%'],
+        avoidLabelOverlap: false,
+        label: {
+          normal: {
+            show: false,
+            position: 'center'
+          },
+          emphasis: {
+            show: true,
+            textStyle: {
+              fontSize: 16
+            }
+          }
+        },
+        labelLine: {
+          normal: {
+            show: false
+          }
+        },
+        data: [
+          {value: 248, name: '大型'},
+          {value: 335, name: '中型'},
+          {value: 335, name: '小型'}
+        ]
+      }
+    ]
+  };
+  complete.setOption(completeOption);
+
+  var corpDistribute2 = echarts.init(document.getElementById('corpDistribute2'));
+  var corpDistribute2Option = {
+    tooltip: {
+      trigger: 'axis',
+      axisPointer: {
+        type: 'shadow'
+      }
+    },
+    grid: {
+      top: '4%',
+      left: 0,
+      right: '4%',
+      bottom: 0,
+      containLabel: true
+    },
+    xAxis: {
+      type: 'category',
+      splitLine: {
+        show: false,
+        lineStyle: {
+          color: ['#0087ED']
+        }
+      },
+      nameTextStyle: {
+        color: ['#59b2fb']
+      },
+      axisLine: {
+        lineStyle: {
+          color: '#0087ED',
+          width: 1
+        }
+      },
+      data: ['盐田', '盐田', '盐田', '盐田', '盐田', '盐田', '盐田', '盐田', '盐田', '盐田'],
+      axisLabel: {
+        interval: 0,
+        rotate: 45
+      }
+    },
+    yAxis: {
+      type: 'value',
+      splitLine: {
+        show: false,
+        lineStyle: {
+          color: ['#0087ED']
+        }
+      },
+      nameTextStyle: {
+        color: ['#59b2fb']
+      },
+      axisLine: {
+        lineStyle: {
+          color: '#0087ED',
+          width: 1
+        }
+      }
+    },
+    series: [
+      {
+        name: '大型',
+        type: 'bar',
+        stack: '总量',
+        barWidth: '15px',
+        data: [200, 250, 100, 250, 300, 300, 200, 150, 100, 200],
+        itemStyle: {
+          normal: {
+            color: '#80daff'
+          }
+
+        }
+      },
+      {
+        name: '中型',
+        type: 'bar',
+        stack: '总量',
+        barWidth: '15px',
+        data: [150, 150, 150, 150, 60, 150, 50, 150, 100, 80],
+        itemStyle: {
+          normal: {
+            color: '#00b0ff'
+          }
+        }
+      },
+      {
+        name: '小型',
+        type: 'bar',
+        stack: '总量',
+        barWidth: '15px',
+        data: [40, 40, 40, 40, 40, 40, 40, 40, 40, 40],
+        itemStyle: {
+          normal: {
+            color: '#1261dd'
+          }
+        }
+      }
+    ]
+  };
+  corpDistribute2.setOption(corpDistribute2Option);
+
+
+  var scaleScale2 = echarts.init(document.getElementById('scaleScale2'));
+  var scaleScale2Option = {
+    color: ['#80daff', '#00b0ff', '#1261dd'],
+    tooltip: {
+      trigger: 'item',
+      formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    series: [
+      {
+        name: '占比',
+        type: 'pie',
+        radius: ['55%', '80%'],
+        avoidLabelOverlap: false,
+        label: {
+          normal: {
+            show: false,
+            position: 'center'
+          },
+          emphasis: {
+            show: true,
+            textStyle: {
+              fontSize: 16
+            }
+          }
+        },
+        labelLine: {
+          normal: {
+            show: false
+          }
+        },
+        data: [
+          {value: 248, name: '大型'},
+          {value: 335, name: '中型'},
+          {value: 335, name: '小型'}
+        ]
+      }
+    ]
+  };
+  scaleScale2.setOption(scaleScale2Option);
+
+
+  var complete2 = echarts.init(document.getElementById('complete2'));
+  var complete2Option = {
+    color: ['#80daff', '#00b0ff', '#1261dd'],
+    tooltip: {
+      trigger: 'item',
+      formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    series: [
+      {
+        name: '占比',
+        type: 'pie',
+        radius: ['55%', '80%'],
+        avoidLabelOverlap: false,
+        label: {
+          normal: {
+            show: false,
+            position: 'center'
+          },
+          emphasis: {
+            show: true,
+            textStyle: {
+              fontSize: 16
+            }
+          }
+        },
+        labelLine: {
+          normal: {
+            show: false
+          }
+        },
+        data: [
+          {value: 248, name: '大型'},
+          {value: 335, name: '中型'},
+          {value: 335, name: '小型'}
+        ]
+      }
+    ]
+  };
+  complete2.setOption(complete2Option);
+
+
+</script>
+<script>
+
+  $(function () {
+
+    // 选项卡切换
+    function Tab(option, active, tabObj, siblingObj) {
+      var $tab = $(option);
+      $tab.click(function () {
+        $(this).addClass(active).siblings().removeClass(active);
+        var index = $tab.index(this);
+        $(tabObj).eq(index).show().siblings(siblingObj).hide();
+      });
+    }
+
+    // 中间主体 - 标签切换 选项卡
+    Tab('.alarmTab a', 'active', '.alarmType>.typeDiv', 'div');
+
+
+    var tabsOptionA = $('.alarmTab a');
+    tabsOptionA.on('click', function () {
+      setTimeout(function () {
+        corpDistribute.resize();
+        scaleScale.resize();
+        complete.resize();
+        corpDistribute2.resize();
+        scaleScale2.resize();
+        complete2.resize();
+      }, 1)
+    })
+
+  });
+
+
+  $(window).resize(function () {
+    corpDistribute2.resize();
+    scaleScale2.resize();
+    complete2.resize();
+
+  })
+
+
+</script>
+</body>
+</html>
